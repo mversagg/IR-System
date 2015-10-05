@@ -1,0 +1,67 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Stemmer()
+comment0.text=unit\ of\ size\ whereby\ b\ is\ increased
+comment1.params=ch
+comment1.target=void\ add(char)
+comment1.text=\n\ Add\ a\ character\ to\ the\ word\ being\ stemmed.\ \ When\ you\ are\ finished\n\ adding\ characters,\ you\ can\ call\ stem(void)\ to\ stem\ the\ word.\n
+comment10.params=i
+comment10.target=boolean\ cvc(int)
+comment10.text=\ cvc(i)\ is\ true\ <\=>\ i-2,i-1,i\ has\ the\ form\ consonant\ -\ vowel\ -\ consonant\n\ \ \ \ \ \ and\ also\ if\ the\ second\ c\ is\ not\ w,x\ or\ y.\ this\ is\ used\ when\ trying\ to\n\ \ \ \ \ \ restore\ an\ e\ at\ the\ end\ of\ a\ short\ word.\ e.g.\n\n\ \ \ \ \ \ \ \ \ cav(e),\ lov(e),\ hop(e),\ crim(e),\ but\n\ \ \ \ \ \ \ \ \ snow,\ box,\ tray.\n\n
+comment11.params=s
+comment11.target=boolean\ ends(java.lang.String)
+comment12.params=s
+comment12.target=void\ setto(java.lang.String)
+comment12.text=\ setto(s)\ sets\ (j+1),...k\ to\ the\ characters\ in\ the\ string\ s,\ readjusting\nk.
+comment13.params=s
+comment13.target=void\ r(java.lang.String)
+comment13.text=r(s)\ is\ used\ further\ down.
+comment14.params=
+comment14.target=void\ step1()
+comment14.text=\ step1()\ gets\ rid\ of\ plurals\ and\ -ed\ or\ -ing.\ e.g.\n\n\ \ \ \ \ \ \ \ \ \ caresses\ \ ->\ \ caress\n\ \ \ \ \ \ \ \ \ \ ponies\ \ \ \ ->\ \ poni\n\ \ \ \ \ \ \ \ \ \ ties\ \ \ \ \ \ ->\ \ ti\n\ \ \ \ \ \ \ \ \ \ caress\ \ \ \ ->\ \ caress\n\ \ \ \ \ \ \ \ \ \ cats\ \ \ \ \ \ ->\ \ cat\n\n\ \ \ \ \ \ \ \ \ \ feed\ \ \ \ \ \ ->\ \ feed\n\ \ \ \ \ \ \ \ \ \ agreed\ \ \ \ ->\ \ agree\n\ \ \ \ \ \ \ \ \ \ disabled\ \ ->\ \ disable\n\n\ \ \ \ \ \ \ \ \ \ matting\ \ \ ->\ \ mat\n\ \ \ \ \ \ \ \ \ \ mating\ \ \ \ ->\ \ mate\n\ \ \ \ \ \ \ \ \ \ meeting\ \ \ ->\ \ meet\n\ \ \ \ \ \ \ \ \ \ milling\ \ \ ->\ \ mill\n\ \ \ \ \ \ \ \ \ \ messing\ \ \ ->\ \ mess\n\n\ \ \ \ \ \ \ \ \ \ meetings\ \ ->\ \ meet\n\n
+comment15.params=
+comment15.target=void\ step2()
+comment15.text=step2()\ turns\ terminal\ y\ to\ i\ when\ there\ is\ another\ vowel\ in\ the\ stem.
+comment16.params=
+comment16.target=void\ step3()
+comment16.text=\ step3()\ maps\ double\ suffices\ to\ single\ ones.\ so\ -ization\ (\ \=\ -ize\ plus\n\ \ \ \ \ \ -ation)\ maps\ to\ -ize\ etc.\ note\ that\ the\ string\ before\ the\ suffix\ must\ give\nm()\ >\ 0.
+comment17.params=
+comment17.target=void\ step4()
+comment17.text=step4()\ deals\ with\ -ic-,\ -full,\ -ness\ etc.\ similar\ strategy\ to\ step3.
+comment18.params=
+comment18.target=void\ step5()
+comment18.text=step5()\ takes\ off\ -ant,\ -ence\ etc.,\ in\ context\ <c>vcvc<v>.
+comment19.params=
+comment19.target=void\ step6()
+comment19.text=step6()\ removes\ a\ final\ -e\ if\ m()\ >\ 1.
+comment2.params=w\ wLen
+comment2.target=void\ add(char[],\ int)
+comment2.text=\ Adds\ wLen\ characters\ to\ the\ word\ being\ stemmed\ contained\ in\ a\ portion\n\ of\ a\ char[]\ array.\ This\ is\ like\ repeated\ calls\ of\ add(char\ ch),\ but\n\ faster.\n
+comment20.params=
+comment20.target=void\ stem()
+comment20.text=\ Stem\ the\ word\ placed\ into\ the\ Stemmer\ buffer\ through\ calls\ to\ add().\n\ Returns\ true\ if\ the\ stemming\ process\ resulted\ in\ a\ word\ different\n\ from\ the\ input.\ \ You\ can\ retrieve\ the\ result\ with\n\ getResultLength()/getResultBuffer()\ or\ toString().\n
+comment21.params=args
+comment21.target=void\ main(java.lang.String[])
+comment21.text=\ Test\ program\ for\ demonstrating\ the\ Stemmer.\ \ It\ reads\ text\ from\ a\n\ a\ list\ of\ files,\ stems\ each\ word,\ and\ writes\ the\ result\ to\ standard\n\ output.\ Note\ that\ the\ word\ stemmed\ is\ expected\ to\ be\ in\ lower\ case\:\n\ forcing\ lower\ case\ must\ be\ done\ outside\ the\ Stemmer\ class.\n\ Usage\:\ Stemmer\ file-name\ file-name\ ...\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\n\ After\ a\ word\ has\ been\ stemmed,\ it\ can\ be\ retrieved\ by\ toString(),\n\ or\ a\ reference\ to\ the\ internal\ buffer\ can\ be\ retrieved\ by\ getResultBuffer\n\ and\ getResultLength\ (which\ is\ generally\ more\ efficient.)\n
+comment4.params=
+comment4.target=int\ getResultLength()
+comment4.text=\n\ Returns\ the\ length\ of\ the\ word\ resulting\ from\ the\ stemming\ process.\n
+comment5.params=
+comment5.target=char[]\ getResultBuffer()
+comment5.text=\n\ Returns\ a\ reference\ to\ a\ character\ buffer\ containing\ the\ results\ of\n\ the\ stemming\ process.\ \ You\ also\ need\ to\ consult\ getResultLength()\n\ to\ determine\ the\ length\ of\ the\ result.\n
+comment6.params=i
+comment6.target=boolean\ cons(int)
+comment6.text=cons(i)\ is\ true\ <\=>\ b[i]\ is\ a\ consonant.
+comment7.params=
+comment7.target=int\ m()
+comment7.text=\ m()\ measures\ the\ number\ of\ consonant\ sequences\ between\ 0\ and\ j.\ if\ c\ is\n\ \ \ \ \ \ a\ consonant\ sequence\ and\ v\ a\ vowel\ sequence,\ and\ <..>\ indicates\ arbitrary\n\ \ \ \ \ \ presence,\n\n\ \ \ \ \ \ \ \ \ <c><v>\ \ \ \ \ \ \ gives\ 0\n\ \ \ \ \ \ \ \ \ <c>vc<v>\ \ \ \ \ gives\ 1\n\ \ \ \ \ \ \ \ \ <c>vcvc<v>\ \ \ gives\ 2\n\ \ \ \ \ \ \ \ \ <c>vcvcvc<v>\ gives\ 3\n\ \ \ \ \ \ \ \ \ ....\n
+comment8.params=
+comment8.target=boolean\ vowelinstem()
+comment8.text=vowelinstem()\ is\ true\ <\=>\ 0,...j\ contains\ a\ vowel
+comment9.params=j
+comment9.target=boolean\ doublec(int)
+comment9.text=doublec(j)\ is\ true\ <\=>\ j,(j-1)\ contain\ a\ double\ consonant.
+numComments=22

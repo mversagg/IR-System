@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=newPerson
+comment0.target=Document(Person)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Document\n
+comment1.params=newPerson\ newTermData
+comment1.target=Document(Person,\ java.util.Hashtable)
+comment2.params=
+comment2.target=java.util.Hashtable\ getClone()
+comment3.params=
+comment3.target=java.util.ArrayList\ getVocab()
+comment4.params=target
+comment4.target=java.lang.String\ getTermInfo(java.lang.String)
+comment5.params=newTerm
+comment5.target=void\ addTerm(java.lang.String)
+comment6.params=r\ s
+comment6.target=void\ setDataUp(StopwordRemoval,\ Stemmer)
+comment7.params=
+comment7.target=void\ createTermFrequencies()
+comment8.params=idfs
+comment8.target=void\ calcWeights(java.util.Hashtable)
+numComments=9
