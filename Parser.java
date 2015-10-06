@@ -46,13 +46,12 @@ public class Parser {
    //   entire thing into a String array
    private String[] parseQuery(Scanner queryStream) {
        ArrayList<String> toReturn =  new ArrayList();
-       String[] arr = new String[50];
        
        while (queryStream.hasNextLine()) {
            toReturn.addAll(toListSansDash(removePunc(queryStream.nextLine()).split(" ")));
        }
         
-       return toReturn.toArray(arr);
+       return toReturn.toArray(new String[toReturn.size()]);
    }
    
    private ArrayList<String> toListSansDash(String[] target) {
