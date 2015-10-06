@@ -41,8 +41,7 @@ public class Lab2Driver
             if(input.equals("1"))
             {
                 System.out.print("Enter the name of the JSON file you wish to load from: ");
-                //input = reader.nextLine();
-                parse = new Parser(new File("fakeData.json"));
+                input = reader.nextLine();
             }
             //2 is setting up the documents and all their variables
             else if(input.equals("2"))
