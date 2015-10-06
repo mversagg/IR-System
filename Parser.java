@@ -25,42 +25,75 @@ public class Parser {
       in = new Scanner(f);
    }
 
+   // Grabs the next document and parses it into a Person object
    public Person nextDoc() {
       return parseLine();
+   }
+   
+   // Parses a query provided by the input stream in the Scanner
+   //   and returns the parsed version in the form of a String[]
+   public String[] nextQuery(Scanner queryStream) {
+      return parseQuery(queryStream);
    }
    
    //check for a next doc
    public boolean hasNextDoc()
    {
-       return in.hasNextLine();
+      return in.hasNextLine();
    }
 
-   // Reads in the text file line by line and parses word by word
-   //returns null if it has no more input
+   // Reads in a query line by line and parses the
+   //   entire thing into a String array
+   private String[] parseQuery(Scanner queryStream) {
+       ArrayList<String> toReturn =  new ArrayList();
+       String[] arr = new String[50];
+       
+       while (queryStream.hasNextLine()) {
+           toReturn.addAll(toListSansDash(removePunc(queryStream.nextLine()).split(" ")));
+       }
+        
+       return toReturn.toArray(arr);
+   }
+   
+   private ArrayList<String> toListSansDash(String[] target) {
+       ArrayList<String> newArr = new ArrayList();
+       
+       for (int i = 0; i < target.length; i++) {
+           if (!target[i].equals("-"))
+               newArr.add(target[i]);
+       }
+       
+       return newArr;
+   }
+   
+   private String removePunc(String target) {
+       String toReturn =  target.trim().toLowerCase();
+       
+       toReturn = toReturn.trim().toLowerCase();
+       toReturn = toReturn.replace("{", "");
+       toReturn = toReturn.replace("}", "");
+       toReturn = toReturn.replace(",", "");
+       toReturn = toReturn.replace(";", "");
+       toReturn = toReturn.replace("(", "");
+       toReturn = toReturn.replace(")", "");
+       toReturn = toReturn.replace("\"", "");
+       toReturn = toReturn.replace("!", "");
+       toReturn = toReturn.replace("?", "");
+       toReturn = toReturn.replace(".", "");
+       
+       return toReturn;
+   }
+   
+   // Reads in the text file line by line and parses word by word;
+   // returns null if it has no more input
    private Person parseLine() {
       String[] parsed;
       
       if(!in.hasNextLine())
-      {
           return null;
-      }
-      else
-      {
+      else {
           String line = in.nextLine();
-          
-          line = line.trim().toLowerCase();
-          line = line.replace("{", "");
-          line = line.replace("}", "");
-          line = line.replace(",", "");
-          line = line.replace(";", "");
-          line = line.replace("(", "");
-          line = line.replace(")", "");
-          line = line.replace("\"", "");
-          line = line.replace("!", "");
-          line = line.replace("?", "");
-          line = line.replace(".", "");
-      
-          return makeBaby(line);
+          return makeBaby(removePunc(line));
       }
    }
 
@@ -68,6 +101,7 @@ public class Parser {
       String first, last, type, date, house, committee;
       String[] parsed = line.split(" ", 8);
       String[] text;
+      ArrayList<String> temp;
       int pid;
 
       pid = Integer.valueOf(parsed[0].split(":", 2)[1]);
@@ -78,6 +112,8 @@ public class Parser {
       house = parsed[5].split(":", 2)[1];
       committee = parsed[6].split(":", 2)[1];
       text = parsed[7].split(":", 2)[1].split(" ");
+      temp = toListSansDash(text);
+      text = temp.toArray(new String[temp.size()]);
       
       return new Person(pid, first, last, type, date, house, committee, text);
    }
@@ -106,11 +142,7 @@ class Person {
       house = h;
       committee = c;
       utterance = u;
-      
-      System.out.print("Utterance: ");
-      for (int i = 0; i < u.length; i++)
-        System.out.print(u[i]);
-      System.out.println();
+
    }
 
    public int getPid() {
