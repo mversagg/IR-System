@@ -37,13 +37,14 @@ public class Lab2Driver
             //System.out.println(input);
 
             //check for possible commands
+            //1 means we would like to pull data from a JSON
             if(input.equals("1"))
             {
                 System.out.print("Enter the name of the JSON file you wish to load from: ");
                 input = reader.nextLine();
                 parse = new Parser(new File(input));
             }
-            //2 is dot product
+            //2 is setting up the documents and all their variables
             else if(input.equals("2"))
             {
                 System.out.print("");
