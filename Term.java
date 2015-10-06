@@ -107,7 +107,6 @@ public class Term
              + "Frequency: " + freq + " " 
              + "Weight: " + weight + " "
              + "TotalCount: " + totalCount + " " 
-             + "Df: " + df + " "
              + "Tf: " + termFreq;
     }
 }

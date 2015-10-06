@@ -31,7 +31,7 @@ public class Lab2Driver
         //looping structure for manipulating data
         while(!input.equals("q"))
         {
-            System.out.println("\n1: To Load a JSON File\n2: Setup the Documents");
+            System.out.println("\n1: To Load a JSON File\n2: Setup the Documents\n3: Query");
             System.out.print("Enter a number for operations or q to quit: ");
             input = reader.nextLine();
             //System.out.println(input);

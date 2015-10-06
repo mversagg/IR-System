@@ -47,8 +47,10 @@ public class BigD
             System.out.println("\nOn Doc #" + i);
             ArrayList<String> docVocab = curr.getVocab(); 
             for (int j = 0; j < docVocab.size(); j++) {
-                System.out.println(curr.getTermInfo(docVocab.get(j)));
-                System.out.println("IDf of " + docVocab.get(j) + " is " +  idf.get(docVocab.get(j)));
+                String currTerm = docVocab.get(j);
+                System.out.println(curr.getTermInfo(currTerm));
+                System.out.println("DF of " + currTerm + " is " + vocab.get(currTerm).getDF());
+                System.out.println("IDf of " + currTerm + " is " +  idf.get(currTerm));
             }
         }
         
@@ -69,11 +71,11 @@ public class BigD
         for(int i = 0; i < vocabWords.size(); i++)
         {
             Term temp = vocab.get(vocabWords.get(i));
-            int df = temp.getDF();
+            double df = (double) temp.getDF();
             System.out.println(vocabWords.get(i) + "'s df is " + df);
             double tIDF;
             if(df != 0)
-                tIDF = Math.log((double)docs.size()/df);
+                tIDF = Math.log10((double)docs.size()/df);
             else
                 tIDF = 0;
             idf.put(vocabWords.get(i), tIDF);
