@@ -16,7 +16,7 @@ public class Query
     public Query()
     {
         // initialise instance variables
-        x = 0;
+        
     }
 
     /**
