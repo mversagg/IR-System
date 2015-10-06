@@ -81,4 +81,15 @@ public class BigD
         }
     }
     
+    //give the hashtable containing all the idfs for the list of documents
+    public Hashtable<String, Double> getIDFs()
+    {
+        return idf;
+    }
+    
+    //return the arraylist of docs for the query to use only
+    public ArrayList<Document> getDocs()
+    {
+        return docs;
+    }
 }

@@ -82,6 +82,23 @@ public class Lab2Driver
                 data = new BigD(doc.getClone(), allDocs);
                 
             }
+            //check 3 for searching the data using a query
+            else if(input.equals("3"))
+            {
+                System.out.println("Use your own query or from a file? 1 own, 2 file");
+                input = reader.nextLine();
+                Scanner readFrom;
+                if(input.equals("1"))
+                {
+                    readFrom = new Scanner(System.in);
+                }
+                else if(input.equals("2"))
+                {
+                    System.out.println("Enter the name of the file you wish to load from: ");
+                    input = reader.nextLine();
+                    readFrom = new Scanner(new File(input));
+                }
+            }
         }
     }
 

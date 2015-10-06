@@ -37,6 +37,11 @@ public class Document
         allWords = new ArrayList();
     }
     
+    //get all the terms for this document
+    public Hashtable<String, Term> getTermsOfDoc()
+    {
+        return termData;
+    }
     //retrieve this Documents clone data
     public Hashtable<String, Term> getClone()
     {
