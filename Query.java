@@ -10,6 +10,7 @@
 import java.io.*;
 import java.util.*;
 import java.lang.Math;
+import java.awt.geom.Point2D;
 
 public class Query
 {
@@ -43,6 +44,7 @@ public class Query
         calcWeights();
         calcRelavance();
 
+        ArrayList<Point2D> haha = new ArrayList();
     }
 
     public double okapi(Document doc) {
@@ -59,7 +61,7 @@ public class Query
           if (currFreq != 0) {
              currDF = bigData.getVocab().get(currTerm).getDF();
     
-             sumRes = log((numDocs - currDF  + 0.5) / (currDF + 0.5)) *
+             sumRes = Math.log((numDocs - currDF  + 0.5) / (currDF + 0.5)) *
                       (((k1 + 1) * currFreq) / (k1 * (1 - b + b * (docLen / avdl)))) *
                       ((k2 + 1) / (k2 + termFreq.get(currTerm))) * termFreq.get(currTerm);
           }
@@ -198,8 +200,8 @@ public class Query
                 fij = 0.0;
             }
             
-            answer+= (1 + Math.log1p(1 + Math.log1p(fij)))/((1 - s) + 
-                s*(dl/avdl))*qf*(Math.log1p((numDocs + 1)/dfi));
+            answer+= (1 + Math.log(1 + Math.log(fij)))/((1 - s) + 
+                s*(dl/avdl))*qf*(Math.log((numDocs + 1)/dfi));
         }
         
         return answer;
