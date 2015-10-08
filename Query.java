@@ -45,6 +45,31 @@ public class Query
 
     }
 
+public double okapi(Document doc) {
+   double piece1, piece2, piece3, sumRes = 0, k1 = 1.5, k2 = 900, b = .75;
+   int docLen, currFreq, currDF = 0;
+   String currTerm;
+   HashTable<String, Term> docTerms = doc.getTermsofDoc();
+
+   docLen = doc.getPerson().getText().length;
+
+   for (int i = 0; i < vocab.size(); i++) {
+      currTerm = vocab.get(i);
+      currFreq = docTerms.get(currTerm).getFreq();
+      if (currFreq != 0) {
+         for (int j = 0; j < ; j++) {
+            currDF = bigData.getVocab().get(currTerm).getDF();
+
+            sumRes = log((numDocs - currDF  + 0.5) / (currDF + 0.5)) *
+                     (((k1 + 1) * currFreq) / (k1 * (1 - b + b * (docLen / avdl)))) *
+                     ((k2 + 1) / (k2 + termFreq.get(currTerm))) * termFreq.get(currTerm);
+         }
+      }
+   }
+
+   return sumRes;
+}
+
     //clac the termfreq of each word in the q, basically loop
     //the terms array and count the occurences
     private void createTermFreq()
