@@ -17,6 +17,7 @@ public class BigD
     private Hashtable<String, Double> idf;
     private ArrayList<Document> docs;
     private ArrayList<String> vocabWords;
+    
     /**
      * Constructor for objects of class BigD
      */

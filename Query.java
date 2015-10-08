@@ -22,6 +22,8 @@ public class Query
     private BigD bigData;
     //this will be the variable containing the number of total docs
     private int numDocs;
+    //the average length of document
+    private double avdl;
 
     /**
      * Constructor for objects of class Query
@@ -35,6 +37,7 @@ public class Query
         termFreq = new Hashtable(20);
         vocab = new ArrayList();
         relavDocCorrelation = new Hashtable(100);
+        calcAVDL();
         //calc the term frequencies inside the query
         createTermFreq();
         calcWeights();
@@ -101,7 +104,20 @@ public class Query
         }
 
     }
-
+    
+    //little function to calculate the average length of documents in bigd
+    private void calcAVDL()
+    {
+        ArrayList<Document> docs = bigData.getDocs();
+        double totalNumWords = 0;
+        //loop through the docs one by one
+        for(int docIndex = 0; docIndex < docs.size(); docIndex++)
+        {
+            totalNumWords += docs.get(docIndex).getPerson().getText().length;
+        }
+        
+        avdl = totalNumWords/docs.size();
+    }
     //do the cosine similarity
     private Double cosSimilarity(Document theDoc)
     {
@@ -138,7 +154,7 @@ public class Query
     private Double pnw(Document theDoc)
     {
         Hashtable<String, Term> termsForDoc = theDoc.getTermsOfDoc();
-        double dfi, fij, dl = theDoc.getPerson().getText().length, avdl, qf, answer = 0;
+        double dfi, fij, dl = theDoc.getPerson().getText().length, qf, answer = 0;
         double s = 0.2; //doc length normalization parameter
         
         //now go through all the terms in the doc and get the weight
@@ -146,6 +162,7 @@ public class Query
         for(int index = 0; index < vocab.size(); index++)
         {
             qf = termFreq.get(vocab.get(index));
+            dfi = bigData.getVocab().get(vocab.get(index)).getDF();
             //first check if the query word is in the doc list of words
             if(termsForDoc.contains(vocab.get(index)))
             {
@@ -157,10 +174,10 @@ public class Query
                 fij = 0.0;
             }
             
-            //answer+= (1 + Math.log1p(1 + Math.log1p(fij)))/((1 - s) + 
-            //    s*(dl/avdl))*qf*(Math.log1p((numDocs + 1)/dfi));
+            answer+= (1 + Math.log1p(1 + Math.log1p(fij)))/((1 - s) + 
+                s*(dl/avdl))*qf*(Math.log1p((numDocs + 1)/dfi));
         }
         
-        return 0.0;
+        return answer;
     }
 }
