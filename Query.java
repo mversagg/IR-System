@@ -99,6 +99,7 @@ public class Query
         for(int docIndex = 0; docIndex < docs.size(); docIndex++)
         {
             wDoc = cosSimilarity(docs.get(docIndex));
+            //wDoc = pnw(docs.get(docIndex));
             relavDocCorrelation.put(docIndex, wDoc);
             System.out.println("Relavence of Doc " + docIndex + " is: " + wDoc);
         }
@@ -168,7 +169,7 @@ public class Query
             {
                 fij = termsForDoc.get(index).getFreq();
             }
-            //doent exist so the weight will be 0 by default
+            //doesnt exist so the weight will be 0 by default
             else
             {
                 fij = 0.0;
