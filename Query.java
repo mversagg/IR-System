@@ -9,16 +9,19 @@
 
 import java.io.*;
 import java.util.*;
+import java.lang.Math;
 
 public class Query
 {
     // instance variables - replace the example below with your own
     private Hashtable<String, Double> termWeights;
     private Hashtable<String, Integer> termFreq;
-    private Hashtable<Document, Double> relavDocCorrelation;
+    private Hashtable<Integer, Double> relavDocCorrelation;
     private String[] terms;
     private ArrayList<String> vocab;
     private BigD bigData;
+    //this will be the variable containing the number of total docs
+    private int numDocs;
 
     /**
      * Constructor for objects of class Query
@@ -32,8 +35,13 @@ public class Query
         termFreq = new Hashtable(20);
         vocab = new ArrayList();
         relavDocCorrelation = new Hashtable(100);
+        //calc the term frequencies inside the query
+        createTermFreq();
+        calcWeights();
+        calcRelavance();
+
     }
-    
+
     //clac the termfreq of each word in the q, basically loop
     //the terms array and count the occurences
     private void createTermFreq()
@@ -53,7 +61,7 @@ public class Query
                 termFreq.put(terms[i], newTerm);
             }
         }
-        
+
         //set up the vocab for this query
         String tempWords;
         //loop through the elements of termFreq to get the vocab
@@ -63,7 +71,7 @@ public class Query
             vocab.add(tempWords);
         }
     }
-    
+
     //clac the weight of each term in the query
     private void calcWeights()
     {
@@ -75,16 +83,84 @@ public class Query
             termWeights.put(vocab.get(i), weight);
         }
     }
-    
-    
+
     //calc the relavance of all the docs
     private void calcRelavance()
     {
         ArrayList<Document> docs = bigData.getDocs();
+        numDocs = docs.size();
         Hashtable<String, Term> termsForDoc;
-        //now loop through all the docs and calc the relavance of that doc to the query
-        /*
-         * Work here next time
-         */
+        double wDoc;
+        //we have vocab to use for a dictionary
+        //loop through the docs one by one
+        for(int docIndex = 0; docIndex < docs.size(); docIndex++)
+        {
+            wDoc = cosSimilarity(docs.get(docIndex));
+            relavDocCorrelation.put(docIndex, wDoc);
+            System.out.println("Relavence of Doc " + docIndex + " is: " + wDoc);
+        }
+
+    }
+
+    //do the cosine similarity
+    private Double cosSimilarity(Document theDoc)
+    {
+        Hashtable<String, Term> termsForDoc = theDoc.getTermsOfDoc();
+        double tempWeight, qWeight, qDenom = 0, tDenom = 0, qtNumer = 0;
+        
+        //now go through all the terms in the doc and get the weight
+        //for each word that is in the doc and the query, vocab is the list of words in the q
+        for(int index = 0; index < vocab.size(); index++)
+        {
+            qWeight = termWeights.get(vocab.get(index));
+            //first check if the query word is in the doc list of words
+            if(termsForDoc.contains(vocab.get(index)))
+            {
+                tempWeight = termsForDoc.get(index).getWeight();
+            }
+            //doent exist so the weight will be 0 by default
+            else
+            {
+                tempWeight = 0.0;
+            }
+            
+            qtNumer += qWeight*tempWeight;
+            qDenom += qWeight*qWeight;
+            tDenom += tempWeight*tempWeight;
+        }
+
+        double answer = qtNumer/(Math.sqrt(qDenom*tDenom));
+        
+        return answer;
+    }
+    
+    //do the pivoted normalization weighting
+    private Double pnw(Document theDoc)
+    {
+        Hashtable<String, Term> termsForDoc = theDoc.getTermsOfDoc();
+        double dfi, fij, dl = theDoc.getPerson().getText().length, avdl, qf, answer = 0;
+        double s = 0.2; //doc length normalization parameter
+        
+        //now go through all the terms in the doc and get the weight
+        //for each word that is in the doc and the query, vocab is the list of words in the q
+        for(int index = 0; index < vocab.size(); index++)
+        {
+            qf = termFreq.get(vocab.get(index));
+            //first check if the query word is in the doc list of words
+            if(termsForDoc.contains(vocab.get(index)))
+            {
+                fij = termsForDoc.get(index).getFreq();
+            }
+            //doent exist so the weight will be 0 by default
+            else
+            {
+                fij = 0.0;
+            }
+            
+            //answer+= (1 + Math.log1p(1 + Math.log1p(fij)))/((1 - s) + 
+            //    s*(dl/avdl))*qf*(Math.log1p((numDocs + 1)/dfi));
+        }
+        
+        return 0.0;
     }
 }

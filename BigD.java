@@ -89,6 +89,12 @@ public class BigD
         return idf;
     }
     
+    //get the entire vocab for this BigD
+    public Hashtable<String, Term> getVocab()
+    {
+        return vocab;
+    }
+    
     //return the arraylist of docs for the query to use only
     public ArrayList<Document> getDocs()
     {

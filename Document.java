@@ -37,6 +37,11 @@ public class Document
         allWords = new ArrayList();
     }
     
+    //get the person who is responsible for this document object
+    public Person getPerson()
+    {
+        return thisPerson;
+    }
     //get all the terms for this document
     public Hashtable<String, Term> getTermsOfDoc()
     {
