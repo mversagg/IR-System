@@ -7,6 +7,7 @@
  */
 import java.io.*;
 import java.util.*;
+import java.awt.geom.Point2D;
 
 public class Lab2Driver
 {
@@ -28,6 +29,7 @@ public class Lab2Driver
         String input = "";
         Scanner reader = new Scanner(System.in);
         ArrayList<Double> tempIndices = new ArrayList<Double>();
+        ArrayList<Point2D.Double> results;
         //looping structure for manipulating data
         while(!input.equals("q"))
         {
@@ -85,9 +87,11 @@ public class Lab2Driver
             //check 3 for searching the data using a query
             else if(input.equals("3"))
             {
+                Query query;
+                
                 System.out.println("Use your own query or from a file? 1 own, 2 file");
                 input = reader.nextLine();
-                Scanner readFrom;
+                Scanner readFrom = null;
                 if(input.equals("1"))
                 {
                     readFrom = new Scanner(System.in);
@@ -98,9 +102,26 @@ public class Lab2Driver
                     input = reader.nextLine();
                     readFrom = new Scanner(new File(input));
                 }
+                
+                ArrayList<String> rawQuery = new ArrayList();
+                
+                while (readFrom.hasNextLine())
+                    rawQuery.addAll(Arrays.asList(parse.nextQuery(readFrom)));
+                
+                query = new Query(rawQuery, data);
+                results = query.getResults();
+                
+                printResults(results);
+                
             }
         }
+        
     }
 
-  
+    private static void printResults(ArrayList<Point2D.Double> results) {
+        
+        for (int i = results.size() - 1, j = 1; i >= 0 ; i--, j++) {
+            System.out.println("The " + j + " item is from docIndex " + results.get(i).y);
+        }
+    }
 }
