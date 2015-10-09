@@ -38,6 +38,7 @@ public class BigD
         System.out.println("Number of documents: " + docs.size());
         System.out.println("Size of vocab: " + vocabWords.size());
         
+        /*
         System.out.print("ALL WORDS: ");
         for (int i = 0; i < vocabWords.size(); i++)
             System.out.print(vocabWords.get(i) + ", ");
@@ -47,17 +48,19 @@ public class BigD
             Document curr = docs.get(i);
             System.out.println("\nOn Doc #" + i);
             ArrayList<String> docVocab = curr.getVocab(); 
+        
             for (int j = 0; j < docVocab.size(); j++) {
                 String currTerm = docVocab.get(j);
                 System.out.println(curr.getTermInfo(currTerm));
                 System.out.println("DF of " + currTerm + " is " + vocab.get(currTerm).getDF());
                 System.out.println("IDf of " + currTerm + " is " +  idf.get(currTerm));
-            }
+            }    
         }
-        
+        */
         
     }
 
+    // Ryan didn't write a comment here because he's a bad programmer
     private void calcIDFs()
     {
         String tempWords;
@@ -73,14 +76,12 @@ public class BigD
         {
             Term temp = vocab.get(vocabWords.get(i));
             double df = (double) temp.getDF();
-            System.out.println(vocabWords.get(i) + "'s df is " + df);
             double tIDF;
             if(df != 0)
                 tIDF = Math.log10((double)docs.size()/df);
             else
                 tIDF = 0;
             idf.put(vocabWords.get(i), tIDF);
-            System.out.println(vocabWords.get(i) + "'s idf is " + tIDF);
         }
     }
     

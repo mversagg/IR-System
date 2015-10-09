@@ -53,14 +53,11 @@ public class Query
     {
         Stemmer s = new Stemmer();
         ArrayList<String> cleanTerms = new ArrayList();
-        System.out.println(terms.size());
+
         //loop through all the words in this persons utterance
         for(int index = 0; index < terms.size(); index++)
         {
-            if(!swr
-            .isStopWord(
-                terms
-                .get(index)))
+            if(!swr.isStopWord(terms.get(index)))
             {
                 s.add(terms.get(index).toCharArray(), 
                     terms.get(index).length());
@@ -74,18 +71,24 @@ public class Query
     }
 
     public ArrayList<Point2D.Double> getResults() {
+        ArrayList<Point2D.Double> filteredResults;
         int fromIndex = relavDocCorr.size() - 10;
-        int toIndex = relavDocCorr.size() - 1;
+        int toIndex = relavDocCorr.size();
         
-        return new ArrayList(relavDocCorr.subList(fromIndex, toIndex));
+        filteredResults = new ArrayList(relavDocCorr.subList(fromIndex, toIndex));
+        
+        for (int i = 0; i < 10; i++) {
+            if (filteredResults.get(i).y == 0)
+                filteredResults.remove(i);
+        }
+        
+        return filteredResults;
     }
     
     //clac the termfreq of each word in the q, basically loop
     //the terms array and count the occurences
     private void createTermFreq()
     {
-        System.out.println("createTermFreq");
-        int newTerm = 1;
         //loop through the terms
         for(int i = 0; i < terms.size(); i++)
         {
@@ -97,7 +100,7 @@ public class Query
             //else its not in there
             else
             {
-                termFreq.put(terms.get(i), newTerm);
+                termFreq.put(terms.get(i), 1);
             }
         }
 
@@ -108,7 +111,7 @@ public class Query
         {
             tempWords = e.nextElement();
             vocab.add(tempWords);
-            System.out.println(tempWords);
+            //System.out.println(tempWords);
         }
         
     }
@@ -116,15 +119,13 @@ public class Query
     //clac the weight of each term in the query
     private void calcWeights()
     {
-        System.out.println("calcWeights");
         //go through terms and calc their weight
         for(int i = 0; i < vocab.size(); i++)
         {
             if(bigData.getIDFs().containsKey(vocab.get(i))){
-                System.out.println(vocab.get(i));
                 Double weight = (0.5 + 0.5*(double)(termFreq.get(vocab.get(i))))*
                     bigData.getIDFs().get(vocab.get(i));
-                    termWeights.put(vocab.get(i), weight);
+                termWeights.put(vocab.get(i), weight);
             }
             else
             {
@@ -136,7 +137,6 @@ public class Query
     //calc the relavance of all the docs
     private void calcRelavance()
     {
-        System.out.println("calcRelavance");
         ArrayList<Document> docs = bigData.getDocs();
         numDocs = docs.size();
         Hashtable<String, Term> termsForDoc;
@@ -146,9 +146,11 @@ public class Query
         for(int docIndex = 0; docIndex < docs.size(); docIndex++)
         {
             //wDoc = cosSimilarity(docs.get(docIndex));
-            wDoc = okapi(docs.get(docIndex));
+            //wDoc = okapi(docs.get(docIndex));
+            wDoc = pnw(docs.get(docIndex));
             relavDocCorr.add(new Point2D.Double((double) docIndex, wDoc));
-            System.out.println("Relavence of Doc " + docIndex + " is: " + wDoc);
+            if (wDoc != 0.0)
+                System.out.println("Relavence of Doc " + docIndex + " is: " + wDoc);
         }
 
     }
@@ -156,7 +158,6 @@ public class Query
     //little function to calculate the average length of documents in bigd
     private void calcAVDL()
     {
-        System.out.println("calcAVDL");
         ArrayList<Document> docs = bigData.getDocs();
         double totalNumWords = 0;
         //loop through the docs one by one
@@ -170,7 +171,6 @@ public class Query
     
     // Uses insertion sort to sort the docs based on relevance
     private void sortResults() {
-        System.out.println("csortResults");
         for (int i = 1; i < relavDocCorr.size(); i++) {
             int j = i;
             Point2D.Double temp = relavDocCorr.get(i);
@@ -184,32 +184,39 @@ public class Query
     //do the cosine similarity
     private Double cosSimilarity(Document theDoc)
     {
-        System.out.println("cosSim");
         Hashtable<String, Term> termsForDoc = theDoc.getTermsOfDoc();
         double tempWeight, qWeight, qDenom = 0, tDenom = 0, qtNumer = 0;
+        double answer;
+        String currQTerm;
         
         //now go through all the terms in the doc and get the weight
         //for each word that is in the doc and the query, vocab is the list of words in the q
-        for(int index = 0; index < vocab.size(); index++)
+        for (int index = 0; index < vocab.size(); index++)
         {
-            qWeight = termWeights.get(vocab.get(index));
+            currQTerm = vocab.get(index);
+            
+            qWeight = termWeights.get(currQTerm);
+            
             //first check if the query word is in the doc list of words
-            if(termsForDoc.contains(vocab.get(index)))
+            if(termsForDoc.containsKey(currQTerm))
             {
-                tempWeight = termsForDoc.get(index).getWeight();
+                tempWeight = termsForDoc.get(currQTerm).getWeight();
             }
-            //doent exist so the weight will be 0 by default
+            // doesn't exist so the weight will be 0 by default
             else
             {
                 tempWeight = 0.0;
             }
             
-            qtNumer += qWeight*tempWeight;
-            qDenom += qWeight*qWeight;
-            tDenom += tempWeight*tempWeight;
+            qtNumer += qWeight * tempWeight;
+            qDenom += qWeight * qWeight;
+            tDenom += tempWeight * tempWeight;
         }
 
-        double answer = qtNumer/(Math.sqrt(qDenom*tDenom));
+        if (qDenom == 0 || tDenom == 0)
+            answer = 0;
+        else
+            answer = qtNumer/(Math.sqrt(qDenom*tDenom));
         
         return answer;
     }
@@ -238,7 +245,7 @@ public class Query
                 fij = 0.0;
             }
             
-            answer+= (1 + Math.log1p(1 + Math.log1p(fij)))/((1 - s) + 
+            answer += (1 + Math.log1p(1 + Math.log1p(fij)))/((1 - s) + 
                 s*(dl/avdl))*qf*(Math.log1p((numDocs + 1)/dfi));
         }
         

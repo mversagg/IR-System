@@ -32,7 +32,7 @@ public class Parser {
    
    // Parses a query provided by the input stream in the Scanner
    //   and returns the parsed version in the form of a String[]
-   public String[] nextQuery(Scanner queryStream) {
+   public ArrayList<String> nextQuery(Scanner queryStream) {
       return parseQuery(queryStream);
    }
    
@@ -44,14 +44,14 @@ public class Parser {
 
    // Reads in a query line by line and parses the
    //   entire thing into a String array
-   private String[] parseQuery(Scanner queryStream) {
+   private ArrayList<String> parseQuery(Scanner queryStream) {
        ArrayList<String> toReturn =  new ArrayList();
        
        while (queryStream.hasNextLine()) {
-           toReturn.addAll(toListSansDash(removePunc(queryStream.nextLine()).split(" ")));
+           toReturn.addAll(toListSansDash(removePunc(queryStream.nextLine()).replace(":", "").replace(",", "").split(" ")));
        }
         
-       return toReturn.toArray(new String[toReturn.size()]);
+       return toReturn;
    }
    
    private ArrayList<String> toListSansDash(String[] target) {
@@ -76,10 +76,12 @@ public class Parser {
        toReturn = toReturn.replace("]", "");              
        toReturn = toReturn.replace("(", "");
        toReturn = toReturn.replace(")", "");
-       toReturn = toReturn.replace("\"", "");
+       toReturn = toReturn.replace("\\", "");
+       toReturn = toReturn.replace("/", "");
        toReturn = toReturn.replace("!", "");
        toReturn = toReturn.replace("?", "");
        toReturn = toReturn.replace(".", "");
+       toReturn = toReturn.replace("\"", "");
        toReturn = toReturn.replace("'", "");
 
        return toReturn;
@@ -104,16 +106,15 @@ public class Parser {
       String[] text;
       ArrayList<String> temp;
       int pid;
-      //System.out.println(parsed[0]);
+      
       pid = Integer.valueOf(parsed[0].split(":", 2)[1]);
-      System.out.println(pid);
       first = parsed[1].split(":", 2)[1];
       last = parsed[2].split(":", 2)[1];
       type = parsed[3].split(":", 2)[1];
       date = parsed[4].split(":", 2)[1];
       house = parsed[5].split(":", 2)[1];
       committee = parsed[6].split(":", 2)[1];
-      text = parsed[7].split(":", 2)[1].replace(",", "").split(" ");
+      text = parsed[7].split(":", 2)[1].replace(",", "").replace(":", "").split(" ");
       temp = toListSansDash(text);
       text = temp.toArray(new String[temp.size()]);
       

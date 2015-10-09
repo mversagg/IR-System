@@ -110,10 +110,8 @@ public class Document
             
             term = termData.get(newTerm);
             term.incrementFreq();
-            System.out.println(cTerm.getDF());
             cTerm.incrementDF();
             cTerm.incrementTotalCount();
-            System.out.println(cloneData.get(newTerm).getDF());
             
             //check maxFreq
             if(maxFreq < term.getFreq())
