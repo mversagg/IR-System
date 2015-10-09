@@ -255,9 +255,9 @@ public class Query
             qf = termFreq.get(vocab.get(index));
             dfi = bigData.getVocab().get(vocab.get(index)).getDF();
             //first check if the query word is in the doc list of words
-            if(termsForDoc.contains(vocab.get(index)))
+            if(termsForDoc.containsKey(vocab.get(index)))
             {
-                fij = termsForDoc.get(index).getFreq();
+                fij = termsForDoc.get(vocab.get(index)).getFreq();
             }
             //doent exist so the weight will be 0 by default
             else
@@ -265,6 +265,7 @@ public class Query
                 fij = 0.0;
             }
             
+            if(fij != 0.0)
             answer += (1 + Math.log(1 + Math.log(fij)))/((1 - s) + 
                 s*(dl/avdl))*qf*(Math.log((numDocs + 1)/dfi));
         }
