@@ -145,9 +145,9 @@ public class Query
         //loop through the docs one by one
         for(int docIndex = 0; docIndex < docs.size(); docIndex++)
         {
-            //wDoc = cosSimilarity(docs.get(docIndex));
+            wDoc = cosSimilarity(docs.get(docIndex));
             //wDoc = okapi(docs.get(docIndex));
-            wDoc = pnw(docs.get(docIndex));
+            //wDoc = pnw(docs.get(docIndex));
             relavDocCorr.add(new Point2D.Double((double) docIndex, wDoc));
             if (wDoc != 0.0)
                 System.out.println("Relavence of Doc " + docIndex + " is: " + wDoc);
@@ -163,7 +163,7 @@ public class Query
         //loop through the docs one by one
         for(int docIndex = 0; docIndex < docs.size(); docIndex++)
         {
-            totalNumWords += docs.get(docIndex).getPerson().getText().length;
+            totalNumWords += docs.get(docIndex).getPerson().getFilteredText().length;
         }
         
         avdl = totalNumWords/docs.size();
@@ -225,8 +225,8 @@ public class Query
     private Double pnw(Document theDoc)
     {
         Hashtable<String, Term> termsForDoc = theDoc.getTermsOfDoc();
-        double dfi, fij, dl = theDoc.getPerson().getText().length, qf, answer = 0;
-        double s = 0.2; //doc length normalization parameter
+        double dfi, fij, dl = theDoc.getPerson().getFilteredText().length, qf, answer = 0;
+        double s = .2; //doc length normalization parameter
         
         //now go through all the terms in the doc and get the weight
         //for each word that is in the doc and the query, vocab is the list of words in the q
@@ -245,8 +245,8 @@ public class Query
                 fij = 0.0;
             }
             
-            answer += (1 + Math.log1p(1 + Math.log1p(fij)))/((1 - s) + 
-                s*(dl/avdl))*qf*(Math.log1p((numDocs + 1)/dfi));
+            answer += (1 + Math.log(1 + Math.log(fij)))/((1 - s) + 
+                s*(dl/avdl))*qf*(Math.log((numDocs + 1)/dfi));
         }
         
         return answer;
@@ -259,7 +259,7 @@ public class Query
        String currTerm;
        Hashtable<String, Term> docTerms = doc.getTermsOfDoc();
     
-       docLen = doc.getPerson().getText().length;
+       docLen = doc.getPerson().getFilteredText().length;
     
        for (int i = 0; i < vocab.size(); i++) {
           currTerm = vocab.get(i);

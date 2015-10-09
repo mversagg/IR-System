@@ -35,7 +35,7 @@ public class BigD
             docs.get(i).calcWeights(idf);
         }
         
-        System.out.println("Number of documents: " + docs.size());
+        System.out.println("\nNumber of documents: " + docs.size());
         System.out.println("Size of vocab: " + vocabWords.size());
         
         /*

@@ -96,13 +96,13 @@ public class Parser {
           return null;
       else {
           String line = in.nextLine();
-          return makeBaby(removePunc(line));
+          return makeBaby(removePunc(line), line);
       }
    }
 
-   private Person makeBaby(String line) {
+   private Person makeBaby(String modifiedLine, String origLine) {
       String first, last, type, date, house, committee;
-      String[] parsed = line.split(", ", 8);
+      String[] parsed = modifiedLine.split(", ", 8);
       String[] text;
       ArrayList<String> temp;
       int pid;
@@ -118,7 +118,7 @@ public class Parser {
       temp = toListSansDash(text);
       text = temp.toArray(new String[temp.size()]);
       
-      return new Person(pid, first, last, type, date, house, committee, text);
+      return new Person(pid, first, last, type, date, house, committee, text, origLine);
    }
 }
 
@@ -132,10 +132,11 @@ class Person {
    private String date;
    private String house;
    private String committee;
-   private String[] utterance;
+   private String[] filteredText;
+   private String originalText;
 
    public Person(int p, String f, String l, String t,
-    String d, String h, String c, String[] u) {
+    String d, String h, String c, String[] u, String o) {
       
       pid = p;
       first = f;
@@ -144,7 +145,8 @@ class Person {
       date = d;
       house = h;
       committee = c;
-      utterance = u;
+      filteredText = u;
+      originalText = o;
 
    }
 
@@ -176,7 +178,11 @@ class Person {
       return committee;
    }
 
-   public String[] getText() {
-      return utterance;
+   public String[] getFilteredText() {
+      return filteredText;
    }
+   
+   public String getOriginalText() {
+       return originalText;
+    }
 }

@@ -152,12 +152,12 @@ public class Document
     public void setDataUp(StopwordRemoval r, Stemmer s)
     {
         //loop through all the words in this persons utterance
-        for(int index = 0; index < thisPerson.getText().length; index++)
+        for(int index = 0; index < thisPerson.getFilteredText().length; index++)
         {
-            if(!r.isStopWord(thisPerson.getText()[index]))
+            if(!r.isStopWord(thisPerson.getFilteredText()[index]))
             {
-                s.add(thisPerson.getText()[index].toCharArray(), 
-                    thisPerson.getText()[index].length());
+                s.add(thisPerson.getFilteredText()[index].toCharArray(), 
+                    thisPerson.getFilteredText()[index].length());
                 s.stem();
                 //System.out.println("ADDING: " + s.toString());
                 addTerm(s.toString());

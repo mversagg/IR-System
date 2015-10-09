@@ -104,15 +104,13 @@ public class Lab2Driver
      */
     private static void printResults(ArrayList<Point2D.Double> results) {
         
-        System.out.println(results.size() + " results found:\n");
+        System.out.println("\n" + results.size() + " results found:");
         
         for (int i = results.size() - 1, j = 1; i >= 0 ; i--, j++) {
+            System.out.println("\n\t\t---------------------------------------------");
             System.out.println("\nThe " + results.get(i).x + " document has relevance " + results.get(i).y);
-            System.out.println();
-            for(int k = 0; k < data.getDocs().get((int)results.get(i).x).getPerson().getText().length; k++)
-            System.out.print(data.getDocs().get((int)results.get(i).x).getPerson().getText()[k] + " ");
-            
-            System.out.println(".");
+            System.out.println();           
+            System.out.println(data.getDocs().get((int)results.get(i).x).getPerson().getOriginalText());
         }
     }
     
