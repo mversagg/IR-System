@@ -39,7 +39,7 @@ public class StopwordRemoval
             stopWords.put(word, true);
         }
         
-        System.out.println(stopWords.size());
+        //System.out.println(stopWords.size());
     }
     
     public boolean isStopWord(String word)

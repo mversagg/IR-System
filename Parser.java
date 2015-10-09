@@ -71,15 +71,17 @@ public class Parser {
        toReturn = toReturn.trim().toLowerCase();
        toReturn = toReturn.replace("{", "");
        toReturn = toReturn.replace("}", "");
-       toReturn = toReturn.replace(",", "");
        toReturn = toReturn.replace(";", "");
+       toReturn = toReturn.replace("[", "");
+       toReturn = toReturn.replace("]", "");              
        toReturn = toReturn.replace("(", "");
        toReturn = toReturn.replace(")", "");
        toReturn = toReturn.replace("\"", "");
        toReturn = toReturn.replace("!", "");
        toReturn = toReturn.replace("?", "");
        toReturn = toReturn.replace(".", "");
-       
+       toReturn = toReturn.replace("'", "");
+
        return toReturn;
    }
    
@@ -98,19 +100,20 @@ public class Parser {
 
    private Person makeBaby(String line) {
       String first, last, type, date, house, committee;
-      String[] parsed = line.split(" ", 8);
+      String[] parsed = line.split(", ", 8);
       String[] text;
       ArrayList<String> temp;
       int pid;
-
+      //System.out.println(parsed[0]);
       pid = Integer.valueOf(parsed[0].split(":", 2)[1]);
+      System.out.println(pid);
       first = parsed[1].split(":", 2)[1];
       last = parsed[2].split(":", 2)[1];
       type = parsed[3].split(":", 2)[1];
       date = parsed[4].split(":", 2)[1];
       house = parsed[5].split(":", 2)[1];
       committee = parsed[6].split(":", 2)[1];
-      text = parsed[7].split(":", 2)[1].split(" ");
+      text = parsed[7].split(":", 2)[1].replace(",", "").split(" ");
       temp = toListSansDash(text);
       text = temp.toArray(new String[temp.size()]);
       

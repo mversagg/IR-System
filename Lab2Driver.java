@@ -1,4 +1,3 @@
-
 /**
  * The main in our program
  * 
@@ -7,6 +6,7 @@
  */
 import java.io.*;
 import java.util.*;
+import java.awt.geom.Point2D;
 
 public class Lab2Driver
 {
@@ -20,6 +20,11 @@ public class Lab2Driver
         r = new StopwordRemoval("stopwords.txt");
         
         consoleUI();
+      String[] parsed = "[pid:100, first:hannah beth, last:jackson, person".split(", ");
+      for(int i = 0; i < parsed.length; i++)
+      {
+          System.out.println(i + ": " + parsed[i]);
+      }
     }
     
     //a very simple console UI used to test and run our program
@@ -28,6 +33,7 @@ public class Lab2Driver
         String input = "";
         Scanner reader = new Scanner(System.in);
         ArrayList<Double> tempIndices = new ArrayList<Double>();
+        ArrayList<Point2D.Double> results;
         //looping structure for manipulating data
         while(!input.equals("q"))
         {
@@ -65,18 +71,20 @@ public class Lab2Driver
                     //else it wasnt and we need the previous docs vocab
                     else
                     {
-                        ArrayList<String> arr = doc.getVocab();
-                        for (int i = 0; i < arr.size(); i++) {
-                            //String tempWord = arr.get(i);
-                            //System.out.println(doc.getTermInfo(tempWord));
+                        doc = new Document(person, doc.getClone());
+                        //check if there is still more docs, if there are then clear the clone
+                        if(parse.hasNextDoc())
+                        {
+                            //doc.clearClone();
                         }
-                        doc = new Document(person, new Hashtable(doc.getClone()));
                         doc.setDataUp(r, new Stemmer());
                     }
                     
                     //doc.createTermFrequencies();
-                    System.out.println("ADDED a New Doc");
+                    
                     allDocs.add(doc);
+                    
+                    System.out.println("ADDED a New Doc: " + allDocs.size());
                 }
                 
                 data = new BigD(doc.getClone(), allDocs);
@@ -85,9 +93,11 @@ public class Lab2Driver
             //check 3 for searching the data using a query
             else if(input.equals("3"))
             {
+                Query query;
+                
                 System.out.println("Use your own query or from a file? 1 own, 2 file");
                 input = reader.nextLine();
-                Scanner readFrom;
+                Scanner readFrom = null;
                 if(input.equals("1"))
                 {
                     readFrom = new Scanner(System.in);
@@ -98,9 +108,31 @@ public class Lab2Driver
                     input = reader.nextLine();
                     readFrom = new Scanner(new File(input));
                 }
+                
+                ArrayList<String> rawQuery = new ArrayList();
+                
+                while (readFrom.hasNextLine())
+                    rawQuery.addAll(Arrays.asList(parse.nextQuery(readFrom)));
+                System.out.println("Got Out Bitch!");
+                query = new Query(rawQuery, data);
+                results = query.getResults();
+                
+                printResults(results);
+                
             }
         }
+        
     }
 
-  
+    private static void printResults(ArrayList<Point2D.Double> results) {
+        
+        for (int i = results.size() - 1, j = 1; i >= 0 ; i--, j++) {
+            System.out.println("The " + results.get(i).x + " item is from docIndex " + results.get(i).y);
+            for(int k = 0; k < data.getDocs().get((int)results.get(i).x).getPerson().getText().length; k++)
+            System.out.print(data.getDocs().get((int)results.get(i).x).getPerson().getText()[k] + " ");
+            
+            System.out.println(".");
+        }
+    }
+    
 }

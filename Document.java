@@ -31,10 +31,17 @@ public class Document
     public Document(Person newPerson, Hashtable<String, Term> newTermData)
     {
         thisPerson = newPerson;
-        termData = new Hashtable(newTermData);
-        cloneData = new Hashtable(newTermData);
+        termData = new Hashtable(500);
+        //System.out.println(termData.size());
+        cloneData = newTermData;
         maxFreq = 0;
         allWords = new ArrayList();
+    }
+    
+    //clear the clone when you are done with it
+    public void clearClone()
+    {
+        cloneData = null;
     }
     
     //get the person who is responsible for this document object
@@ -64,30 +71,26 @@ public class Document
     public void addTerm(String newTerm)
     {
         Term term;
+        Term cTerm;
         
         //check to see if it already exists
         if(termData.containsKey(newTerm))
         {
             //System.out.println("Entering if and adding onto: " + newTerm);
             term = termData.get(newTerm);
-            
-            //first check if it was already in another document
-            if(term.getFreq() == 0)
-            {
-                //System.out.println("Already have seen this term before in another DOC");
-                term.incrementDF();
-            }
+            cTerm = cloneData.get(newTerm);
             
             //now increment the freq
             term.incrementFreq();
             //total number of times we have seen this word
-            term.incrementTotalCount();
+            cTerm.incrementTotalCount();
             
             //System.out.println("Current freq for " + newTerm + " is " + term.getFreq());
             
             termData.put(newTerm, term);
-            cloneData.put(newTerm, new Term(newTerm, term.getCount(), term.getDF()));
-            System.out.println("--- " + termData.get(newTerm).toString() + " ---");
+            //cloneData.put(newTerm, new Term(newTerm, term.getCount(), term.getDF()));
+            
+            //System.out.println("--- " + termData.get(newTerm).toString() + " ---");
             //System.out.println("After taking out and putting back, freq is " + termData.get(newTerm).getFreq());
             
             //check maxFreq
@@ -97,6 +100,26 @@ public class Document
             }
             
             //System.out.println(newTerm + "'s frequency is " + term.getFreq());
+        }
+        //hasnt been seen in the term data but has been seen in an earlier doc
+        else if(cloneData.containsKey(newTerm))
+        {
+            cTerm = cloneData.get(newTerm);
+            //create the new term for the term data
+            termData.put(newTerm, new Term(newTerm, 0, 0));
+            
+            term = termData.get(newTerm);
+            term.incrementFreq();
+            System.out.println(cTerm.getDF());
+            cTerm.incrementDF();
+            cTerm.incrementTotalCount();
+            System.out.println(cloneData.get(newTerm).getDF());
+            
+            //check maxFreq
+            if(maxFreq < term.getFreq())
+            {
+                maxFreq = term.getFreq();
+            }
         }
         //add a new term and incremnt the df for that term for the clone
         else
@@ -112,7 +135,7 @@ public class Document
             //System.out.println("Current freq for " + newTerm + " is " + term.getFreq());
             
             termData.put(newTerm, term);
-            System.out.println("--- " + termData.get(newTerm).toString() + " ---");
+            //System.out.println("--- " + termData.get(newTerm).toString() + " ---");
             //create the clone data for this term
             cloneData.put(newTerm, new Term(newTerm, term.getCount(), term.getDF()));
             

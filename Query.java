@@ -1,4 +1,3 @@
-
 /**
  * This class will be used as an Object to contain the weights
  * of all the terms inside a query
@@ -17,76 +16,88 @@ public class Query
     // instance variables - replace the example below with your own
     private Hashtable<String, Double> termWeights;
     private Hashtable<String, Integer> termFreq;
-    private Hashtable<Integer, Double> relavDocCorrelation;
-    private String[] terms;
+    private ArrayList<Point2D.Double> relavDocCorr;
+    private ArrayList<String> terms;
     private ArrayList<String> vocab;
     private BigD bigData;
     //this will be the variable containing the number of total docs
     private int numDocs;
     //the average length of document
     private double avdl;
+    private StopwordRemoval swr;
 
     /**
      * Constructor for objects of class Query
      */
-    public Query(String[] newTerms, BigD newData)
+    public Query(ArrayList<String> newTerms, BigD newData) throws FileNotFoundException
     {
         // initialise instance variables
+        swr = new StopwordRemoval("stopwords.txt");
         terms = newTerms;
+        QueryCleanUp();
         bigData = newData;
         termWeights = new Hashtable(20);
         termFreq = new Hashtable(20);
         vocab = new ArrayList();
-        relavDocCorrelation = new Hashtable(100);
+        relavDocCorr = new ArrayList();
         calcAVDL();
         //calc the term frequencies inside the query
         createTermFreq();
         calcWeights();
         calcRelavance();
-
-        ArrayList<Point2D> haha = new ArrayList();
+        sortResults();
+    }
+    
+    //clean up the words before they are looked at
+    private void QueryCleanUp()
+    {
+        Stemmer s = new Stemmer();
+        ArrayList<String> cleanTerms = new ArrayList();
+        System.out.println(terms.size());
+        //loop through all the words in this persons utterance
+        for(int index = 0; index < terms.size(); index++)
+        {
+            if(!swr
+            .isStopWord(
+                terms
+                .get(index)))
+            {
+                s.add(terms.get(index).toCharArray(), 
+                    terms.get(index).length());
+                s.stem();
+                //System.out.println("ADDING: " + s.toString());
+                cleanTerms.add(s.toString());
+            }
+        }
+        
+        terms = cleanTerms;
     }
 
-    public double okapi(Document doc) {
-       double piece1, piece2, piece3, sumRes = 0, k1 = 1.5, k2 = 900, b = .75;
-       int docLen, currFreq, currDF = 0;
-       String currTerm;
-       Hashtable<String, Term> docTerms = doc.getTermsOfDoc();
-    
-       docLen = doc.getPerson().getText().length;
-    
-       for (int i = 0; i < vocab.size(); i++) {
-          currTerm = vocab.get(i);
-          currFreq = docTerms.get(currTerm).getFreq();
-          if (currFreq != 0) {
-             currDF = bigData.getVocab().get(currTerm).getDF();
-    
-             sumRes = Math.log((numDocs - currDF  + 0.5) / (currDF + 0.5)) *
-                      (((k1 + 1) * currFreq) / (k1 * (1 - b + b * (docLen / avdl)))) *
-                      ((k2 + 1) / (k2 + termFreq.get(currTerm))) * termFreq.get(currTerm);
-          }
-       }
-    
-       return sumRes;
+    public ArrayList<Point2D.Double> getResults() {
+        int fromIndex = relavDocCorr.size() - 10;
+        int toIndex = relavDocCorr.size() - 1;
+        
+        return new ArrayList(relavDocCorr.subList(fromIndex, toIndex));
     }
-
+    
     //clac the termfreq of each word in the q, basically loop
     //the terms array and count the occurences
     private void createTermFreq()
     {
+        System.out.println("createTermFreq");
         int newTerm = 1;
         //loop through the terms
-        for(int i = 0; i < terms.length; i++)
+        for(int i = 0; i < terms.size(); i++)
         {
-            if(termFreq.containsKey(terms[i]))
+            if(termFreq.containsKey(terms.get(i)))
             {
-                int temp = termFreq.get(terms[i]);
-                termFreq.put(terms[i], ++temp);
+                int temp = termFreq.get(terms.get(i));
+                termFreq.put(terms.get(i), ++temp);
             }
             //else its not in there
             else
             {
-                termFreq.put(terms[i], newTerm);
+                termFreq.put(terms.get(i), newTerm);
             }
         }
 
@@ -97,24 +108,35 @@ public class Query
         {
             tempWords = e.nextElement();
             vocab.add(tempWords);
+            System.out.println(tempWords);
         }
+        
     }
 
     //clac the weight of each term in the query
     private void calcWeights()
     {
+        System.out.println("calcWeights");
         //go through terms and calc their weight
         for(int i = 0; i < vocab.size(); i++)
         {
-            Double weight = (0.5 + 0.5*(double)(termFreq.get(vocab.get(i))))*
-                bigData.getIDFs().get(vocab.get(i));
-            termWeights.put(vocab.get(i), weight);
+            if(bigData.getIDFs().containsKey(vocab.get(i))){
+                System.out.println(vocab.get(i));
+                Double weight = (0.5 + 0.5*(double)(termFreq.get(vocab.get(i))))*
+                    bigData.getIDFs().get(vocab.get(i));
+                    termWeights.put(vocab.get(i), weight);
+            }
+            else
+            {
+                termWeights.put(vocab.get(i), 0.0);
+            }
         }
     }
 
     //calc the relavance of all the docs
     private void calcRelavance()
     {
+        System.out.println("calcRelavance");
         ArrayList<Document> docs = bigData.getDocs();
         numDocs = docs.size();
         Hashtable<String, Term> termsForDoc;
@@ -123,9 +145,9 @@ public class Query
         //loop through the docs one by one
         for(int docIndex = 0; docIndex < docs.size(); docIndex++)
         {
-            wDoc = cosSimilarity(docs.get(docIndex));
-            //wDoc = pnw(docs.get(docIndex));
-            relavDocCorrelation.put(docIndex, wDoc);
+            //wDoc = cosSimilarity(docs.get(docIndex));
+            wDoc = okapi(docs.get(docIndex));
+            relavDocCorr.add(new Point2D.Double((double) docIndex, wDoc));
             System.out.println("Relavence of Doc " + docIndex + " is: " + wDoc);
         }
 
@@ -134,6 +156,7 @@ public class Query
     //little function to calculate the average length of documents in bigd
     private void calcAVDL()
     {
+        System.out.println("calcAVDL");
         ArrayList<Document> docs = bigData.getDocs();
         double totalNumWords = 0;
         //loop through the docs one by one
@@ -144,9 +167,24 @@ public class Query
         
         avdl = totalNumWords/docs.size();
     }
+    
+    // Uses insertion sort to sort the docs based on relevance
+    private void sortResults() {
+        System.out.println("csortResults");
+        for (int i = 1; i < relavDocCorr.size(); i++) {
+            int j = i;
+            Point2D.Double temp = relavDocCorr.get(i);
+            for (j = i; j > 0 && temp.y < relavDocCorr.get(j - 1).y; j--)
+                relavDocCorr.set(j, relavDocCorr.get(j - 1));
+                
+            relavDocCorr.set(j, temp);
+        }
+    }
+    
     //do the cosine similarity
     private Double cosSimilarity(Document theDoc)
     {
+        System.out.println("cosSim");
         Hashtable<String, Term> termsForDoc = theDoc.getTermsOfDoc();
         double tempWeight, qWeight, qDenom = 0, tDenom = 0, qtNumer = 0;
         
@@ -194,16 +232,48 @@ public class Query
             {
                 fij = termsForDoc.get(index).getFreq();
             }
-            //doesnt exist so the weight will be 0 by default
+            //doent exist so the weight will be 0 by default
             else
             {
                 fij = 0.0;
             }
             
-            answer+= (1 + Math.log(1 + Math.log(fij)))/((1 - s) + 
-                s*(dl/avdl))*qf*(Math.log((numDocs + 1)/dfi));
+            answer+= (1 + Math.log1p(1 + Math.log1p(fij)))/((1 - s) + 
+                s*(dl/avdl))*qf*(Math.log1p((numDocs + 1)/dfi));
         }
         
         return answer;
+    }
+    
+    // Finds the correlation based on the okapi similarity equation
+    private double okapi(Document doc) {
+       double piece1, piece2, piece3, sumRes = 0, k1 = 1.5, k2 = 900, b = .75;
+       double docLen, currFreq, currDF = 0;
+       String currTerm;
+       Hashtable<String, Term> docTerms = doc.getTermsOfDoc();
+    
+       docLen = doc.getPerson().getText().length;
+    
+       for (int i = 0; i < vocab.size(); i++) {
+          currTerm = vocab.get(i);
+          if(docTerms.containsKey(currTerm))
+          {
+              currFreq = docTerms.get(currTerm).getFreq();
+          }
+          else
+          {
+              currFreq = 0;
+          }
+          
+          if (currFreq != 0.0) {
+             currDF = bigData.getVocab().get(currTerm).getDF();
+    
+             sumRes = Math.log((numDocs - currDF  + 0.5) / (currDF + 0.5)) *
+                      (((k1 + 1) * currFreq) / (k1 * (1 - b + b * (docLen / avdl)))) *
+                      ((k2 + 1) / (k2 + termFreq.get(currTerm))) * termFreq.get(currTerm);
+          }
+       }
+    
+       return sumRes;
     }
 }
