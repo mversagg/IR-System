@@ -275,7 +275,7 @@ public class Query
     
     // Finds the correlation based on the okapi similarity equation
     private double okapi(Document doc) {
-       double piece1, piece2, piece3, sumRes = 0, k1 = 1.5, k2 = 900, b = .75;
+       double piece1, piece2, piece3, sumRes = 0, k1 = 1.5, k2 = 500, b = 0.25;
        double docLen, currFreq, currDF = 0;
        String currTerm;
        Hashtable<String, Term> docTerms = doc.getTermsOfDoc();
