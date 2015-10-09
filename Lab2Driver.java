@@ -31,6 +31,7 @@ public class Lab2Driver
         ArrayList<String> rawQuery;
         parse = new Parser(new File("Data.json"));
         Query query;
+        int alg = 1;
         
         prepDocs();
         System.err.println("\nDocuments prepared");
@@ -38,7 +39,7 @@ public class Lab2Driver
         //looping structure for manipulating data
         while(!input.equals("q"))
         {
-            System.err.println("\n1: Query from keyboard\n2: Query from file\n");
+            System.err.println("\n1: Query from keyboard\n2: Query from file\n3: Choose an Algorithm");
             System.err.print("Enter a number for operations or q to quit: ");
             input = reader.nextLine();
             Scanner readFrom = null;
@@ -55,14 +56,24 @@ public class Lab2Driver
                     System.err.println("Enter the name of the file you wish to load from: ");
                     readFrom = new Scanner(new File(reader.nextLine()));
                 }
+                else if(input.equals("3"))
+                {
+                    System.out.println("Choose an algorithm:\n 1 CosSim\n 2 Okapi\n 3 PNW");
+                    alg = Integer.parseInt(reader.nextLine());
+                }
                 
-                rawQuery = parse.nextQuery(readFrom);
+                //make sure we got a query
+                if(input.equals("1") || input.equals("2"))
+                {
+                    rawQuery = parse.nextQuery(readFrom);
                     
-                System.out.println("Got Out Bitch!");
-                query = new Query(rawQuery, data);
-                results = query.getResults();
+                    System.out.println("Got Out Bitch!");
+                    query = new Query(rawQuery, data, alg);
+                    results = query.getResults();
                     
-                printResults(results);
+                    printResults(results);
+                    query.printQuery();
+                }
             }
         }
         

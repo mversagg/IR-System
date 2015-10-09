@@ -18,6 +18,7 @@ public class Query
     private Hashtable<String, Integer> termFreq;
     private ArrayList<Point2D.Double> relavDocCorr;
     private ArrayList<String> terms;
+    private ArrayList<String> origTerms;
     private ArrayList<String> vocab;
     private BigD bigData;
     //this will be the variable containing the number of total docs
@@ -25,15 +26,23 @@ public class Query
     //the average length of document
     private double avdl;
     private StopwordRemoval swr;
+    private int algChoice;
 
     /**
      * Constructor for objects of class Query
      */
-    public Query(ArrayList<String> newTerms, BigD newData) throws FileNotFoundException
+    public Query(ArrayList<String> newTerms, BigD newData, int alg) throws FileNotFoundException
     {
         // initialise instance variables
+        //make sure the alg choice is valid
+        if(alg < 4 && alg > 0)
+        algChoice = alg;
+        else
+        algChoice = 1;
+        
         swr = new StopwordRemoval("stopwords.txt");
         terms = newTerms;
+        origTerms = newTerms;
         QueryCleanUp();
         bigData = newData;
         termWeights = new Hashtable(20);
@@ -140,19 +149,30 @@ public class Query
         ArrayList<Document> docs = bigData.getDocs();
         numDocs = docs.size();
         Hashtable<String, Term> termsForDoc;
-        double wDoc;
+        double wDoc = 0;
         //we have vocab to use for a dictionary
         //loop through the docs one by one
         for(int docIndex = 0; docIndex < docs.size(); docIndex++)
         {
+            //check for the alg choice
+            if(algChoice == 1)
             wDoc = cosSimilarity(docs.get(docIndex));
-            //wDoc = okapi(docs.get(docIndex));
-            //wDoc = pnw(docs.get(docIndex));
+            if(algChoice == 2)
+            wDoc = okapi(docs.get(docIndex));
+            if(algChoice == 3)
+            wDoc = pnw(docs.get(docIndex));
+            
             relavDocCorr.add(new Point2D.Double((double) docIndex, wDoc));
             if (wDoc != 0.0)
                 System.out.println("Relavence of Doc " + docIndex + " is: " + wDoc);
         }
-
+        
+        if(algChoice == 1)
+        System.out.println("Using CosSim Alg");
+        if(algChoice == 2)
+        System.out.println("Using Okapi Alg");
+        if(algChoice == 3)
+        System.out.println("Using PNW Alg");
     }
     
     //little function to calculate the average length of documents in bigd
@@ -282,5 +302,16 @@ public class Query
        }
     
        return sumRes;
+    }
+    
+    //print out the query used
+    public void printQuery()
+    {
+        System.out.print("\nTHE QUERY: ");
+        for(int i = 0; i < origTerms.size(); i++)
+        {
+            System.out.print(origTerms.get(i) + " ");
+        }
+        System.out.println();
     }
 }
