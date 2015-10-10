@@ -1,0 +1,66 @@
+
+THE QUERY: can a licensed physician in the state of california provide an exemption from immunization  
+
+
+10 results found:
+
+		---------------------------------------------
+
+The 544.0 document has relevance 18.31544542024093
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"So the exemption that is in statute basically says that any licensed physician, any licensed physician in the state of California can grant a medical exemption."},
+
+		---------------------------------------------
+
+The 482.0 document has relevance 18.288441266386325
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"The law clearly states that any licensed physician in the state of California can provide a medical exemption. Mainly what they have to do is document the reason. They document the duration, which there's no limitation. That can be indefinite. And they have to sign it, of course, saying that they are a licensed physician. And you get a medical exemption."},
+
+		---------------------------------------------
+
+The 336.0 document has relevance 17.834337816163245
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"that their licensed physician would not write a medical exemption, again any licensed physician can write that medical exemption."},
+
+		---------------------------------------------
+
+The 2433.0 document has relevance 16.359600147214593
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"So, actually, existing law for the medical exemption allows a licensed physician in the State of California to exempt a child with a medical exemption for vaccination. And so, if the licensed physician believes that that child is at risk for injury from the vaccine, they can simply give a medical exemption. In many ways the law has no restrictions on a licensed physician in being able to do that."},
+
+		---------------------------------------------
+
+The 521.0 document has relevance 16.224210640149554
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"That is, it's the professional challenge of the physician in terms of what they believe, that if the risk of the immunization is gonna be such that it's going to put that child at certain or, near, basically increased harm. Then they can provide that exemption. And so, that's to the judgment of actually any licensed physician in the state of California. There's no requirement that you even have to go to a physician that you've seen multiple times in the past."},
+
+		---------------------------------------------
+
+The 1664.0 document has relevance 15.87171132331422
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"There is no other restriction on the judgement of a licensed physician, so anyone who said that they have a licensed physician who told them they couldn't get immunized, should be able to get a medical exemption, and then those children, because they're not immunized, require protection. When you talk about do you have children who may be partially immunized, they may have certain vaccines, they may not take other vaccines."},
+
+		---------------------------------------------
+
+The 618.0 document has relevance 12.704687739338127
+
+ {"pid":4992, "first":"Dean", "last":"Blumberg", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Medical exemptions will remain, which of course is appropriate to have a child's doctor determine whether a child has a medical contraindication for immunization, a conversation between the parent and the physician. In my role, I am happy to provide medical exemptions when it is indicated, when parents tell me about their child's contraindications."},
+
+		---------------------------------------------
+
+The 1231.0 document has relevance 12.635680287520481
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Are there some other external influences aside from their professional judgement? I would point out that the medical board, to my knowledge, has never investigated or removed the license of a physician for granting a medical exemption for immunization, that I'm aware of."},
+
+		---------------------------------------------
+
+The 1720.0 document has relevance 12.621622610688107
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"And so, what this bill has been crafted, working with the chair and the staff, looking at what the bill actually says, not what people would like to assert it says. But it actually says, how it will be interpreted, we have left that discretion to licensed physicians in the State of California, including whether it's your own physician, a specialist you're seeing, another physician, we have left that discretion open. Physicians, there's no limitation in the law. We just heard from the medical board. We are not aware of any physician who has been disciplined or investigated because they provided medical exemption. So there's no cloud hanging over them to be able to do this."},
+
+		---------------------------------------------
+
+The 766.0 document has relevance 11.806416104334108
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Of course, the parent may also receive a note from the physician saying that there's a medical exemption. So they will review that conditional and then they will decide whether to allow the child to enroll or not, but that is not about consent for immunization. Consent for immunization happens between the parent of the child, or the guardian. And the healthcare professional who's providing the immunization. That has not changed at all in this bill."},
+

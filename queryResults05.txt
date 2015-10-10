@@ -1,0 +1,67 @@
+
+THE QUERY: parents right to make healthcare decisions for their child  
+
+
+10 results found:
+
+		---------------------------------------------
+
+The 1912.0 document has relevance 16.285408360034577
+
+ {"pid":85, "first":"Rob", "last":"Bonta", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Every child deserves to be able to go to school in a safe and healthy environment. The parents' right to make healthcare decisions for their child is not entirely boundless, and without limitation. It must take into consideration the effect those decisions have on our neighbors, and others in the community."},
+
+		---------------------------------------------
+
+The 1911.0 document has relevance 16.285408360034577
+
+ {"pid":85, "first":"Rob", "last":"Bonta", "PersonType":"LegStaff", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Every child deserves to be able to go to school in a safe and healthy environment. The parents' right to make healthcare decisions for their child is not entirely boundless, and without limitation. It must take into consideration the effect those decisions have on our neighbors, and others in the community."},
+
+		---------------------------------------------
+
+The 801.0 document has relevance 13.030123889639349
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"So remember, this bill is about enrolling children in school. The decision whether to immunize or not is something the parent makes with their doctors or other healthcare providers providing the immunization. That is separate from school entry. When they then bring their child to school, the school will say, please present your immunization record and your school form, and they would say, okay your child may not."},
+
+		---------------------------------------------
+
+The 2533.0 document has relevance 10.987434964031172
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"She asks, why is my child's school made unsafe because of a decision of another parent? What about my child's right to an education? And what of this mother's need to make a living to support her child and family?"},
+
+		---------------------------------------------
+
+The 106.0 document has relevance 10.434923262602414
+
+ {"pid":4995, "first":"Leah", "last":"Russin", "PersonType":"GeneralPublic", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"There are parents who disagree with me. I know they want to prevent their children from getting sick. I know some of them personally and I know them to be loving and kind. I respect they are doing what they believe is the best for their child, and if those decisions only affected their own child that might be okay, but their decision not only jeopardizes the health and safety of their children, it puts my child at risk and that is unfair."},
+
+		---------------------------------------------
+
+The 766.0 document has relevance 10.26535529020372
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Of course, the parent may also receive a note from the physician saying that there's a medical exemption. So they will review that conditional and then they will decide whether to allow the child to enroll or not, but that is not about consent for immunization. Consent for immunization happens between the parent of the child, or the guardian. And the healthcare professional who's providing the immunization. That has not changed at all in this bill."},
+
+		---------------------------------------------
+
+The 3567.0 document has relevance 10.213210722518738
+
+ {"pid":4999, "first":"Ariel", "last":"Loop", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"There are numerous personal decisions parents make for their children. Disposable vs. cloth diapers, formula vs. breast milk, etc. Vaccination is not a comparable decision. The choice not to vaccinate your children is a threat to public health. Choosing not to vaccinate your child is like, making a choice to risk the health of everyone around you."},
+
+		---------------------------------------------
+
+The 1679.0 document has relevance 9.558424341526424
+
+ {"pid":25, "first":"Bill", "last":"Monning", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"But, where we have a balance here with this bill, that is a tough one for us, is on the one hand, many people voiced their strong belief that they have a right to make the decision for their child. If it were just a decision about their child, I think you would find no quarrel with having a right to make that decision."},
+
+		---------------------------------------------
+
+The 730.0 document has relevance 9.276073409021375
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"There's nothing in this bill that changes that part of the relationship. This bill is about entry into school and entry into, basically it's about enrollment into school. So there is continuous to be informed consent for immunizations and if the parents say, I don't want to get my child immunized. Then the child is not immunized. That is what will happen. And then when they decide they want to enroll their child in school, then the school will say, well, is your child immunized? Then if they decide not to have their child immunized, under this bill, they would have to seek out other options like home schooling or independent study. That's what this bill is about. But, the decision whether to immunize or not, is a decision that's made between the child's parents or guardian, and the health profession that is providing the immunization."},
+
+		---------------------------------------------
+
+The 1107.0 document has relevance 9.11357270584039
+
+ {"pid":10763, "first":"Jay", "last":"Gordon", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"So that they can intelligently participate in decisions about their baby's healthcare. I believe that SB 277 might have the opposite effect on these discussions. Homeschooling is a viable option for very, very few families."},
+
+

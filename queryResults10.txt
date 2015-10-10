@@ -1,0 +1,67 @@
+
+THE QUERY: disease exposure sustained transmission opt-out personal belief exemption preventable  
+
+
+10 results found:
+
+		---------------------------------------------
+
+The 3492.0 document has relevance 30.373072364723022
+
+ {"pid":4992, "first":"Dean", "last":"Blumberg", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"Opting out tends to cluster. Although the overall opting-out rate is less than 3% in California, some schools have opt-out rates of 10 or 20%, some 50% or greater. This leaves pockets of children susceptible to preventable diseases. When disease exposure occurs, sustained transmission is the result."},
+
+		---------------------------------------------
+
+The 842.0 document has relevance 20.3240345724661
+
+ {"pid":4992, "first":"Dean", "last":"Blumberg", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"And resulting disease exposure leads to sustained transmission. The consequences are disease among those who choose not to be vaccinated, but also in those who are vaccinated, because, remember vaccines don't work 100% of the time. And in addition, there are those who are too young to be vaccinated, and they may be infected."},
+
+		---------------------------------------------
+
+The 1740.0 document has relevance 15.306226936811434
+
+ {"pid":9624, "first":"Robert", "last":"Moxley", "PersonType":"GeneralPublic", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"and the vaccination rates are increasing. Since the restrictions have been put on personal belief exemptions in California, personal belief exemptions have been dropping. I'm here to advocate for the fact that religious exemptions are a necessary religious exemptions, legitimate religious exemptions"},
+
+		---------------------------------------------
+
+The 2511.0 document has relevance 14.763440191695068
+
+ {"pid":5003, "first":"Tetyana", "last":"Obukhanych", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"Neither IPV, the Polio vaccine, nor the acellular pertussis, the whooping cough vaccine, nor the diphtheria toxoid vaccines are capable of preventing transmission of infection. They are intended to prevent disease symptoms only."},
+
+		---------------------------------------------
+
+The 2167.0 document has relevance 14.23488330542947
+
+ {"pid":10765, "first":"Barbara", "last":"Loe Fisher", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Only 2.5% of children entering kindergarten in 2014 had a personal belief exemption and many of these children are vaccinated, but use a modified vaccine schedule. SB 277 eliminates the personal belief vaccine exemption, while federal health officials tell doctors to deny medical exemptions to 99.99% of children."},
+
+		---------------------------------------------
+
+The 2821.0 document has relevance 14.184877559036234
+
+ {"pid":5003, "first":"Tetyana", "last":"Obukhanych", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"Furthermore, Low-Responders outnumber those who currently hold personal belief exemptions in California. The rate of personal belief exemptions is currently 2.54% in California. The proportion of Low-Responders was estimated to be 4.7% based on the antibody titre analysis following the second MMR."},
+
+		---------------------------------------------
+
+The 562.0 document has relevance 14.158423464298977
+
+ {"pid":9613, "first":"Dorit", "last":"Reiss", "PersonType":"GeneralPublic", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"It's simply hard to police. You can't limit it to organized religions. You can't prevent it from someone whose religion, but their personal belief does not. It's really hard to prevent giving the exemption to people who are claiming religious opposition even though their main reason is different."},
+
+		---------------------------------------------
+
+The 253.0 document has relevance 13.856156854436438
+
+ {"pid":10745, "first":"Hannah", "last":"Henry", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"But you can change policy and make it harder for people to fall victim to the traps of bogus claims. In considering SB 277 please remember personal belief exemptions do not save lives. Vaccines save lives. Personal belief exemptions do not protect our children and communities."},
+
+		---------------------------------------------
+
+The 1046.0 document has relevance 13.694764838199312
+
+ {"pid":9624, "first":"Robert", "last":"Moxley", "PersonType":"GeneralPublic", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"of the certain orthodoxy, not to give them. So, personal belief exemptions are necessary. Religious belief exemptions are necessary, simply as a matter of American freedom. Thank you."},
+
+		---------------------------------------------
+
+The 3046.0 document has relevance 13.316127387932621
+
+ {"pid":5003, "first":"Tetyana", "last":"Obukhanych", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"According to the Morbidity and Mortality Weekly Report issued by the CDC, at the peak of the outbreak, only 18 out of then-documented 1 in 10 Measles cases in California were in school-aged children with personal belief exemptions. The vast majority of Measles cases in the outbreak were unrelated to personal belief exemptions."},
+
+

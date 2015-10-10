@@ -1,0 +1,67 @@
+
+THE QUERY: association oppose bill  
+
+
+10 results found:
+
+		---------------------------------------------
+
+The 2301.0 document has relevance 6.42441613926475
+
+ {"pid":5062, "first":"Phillip", "last":"Bautista", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"Phillip Bautista, elected director to the American Nurses Association California, and as a board of directors on behalf of the association we strongly support this bill."},
+
+		---------------------------------------------
+
+The 2300.0 document has relevance 6.42441613926475
+
+ {"pid":5062, "first":"Phillip", "last":"Bautista", "PersonType":"Lobbyist", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"Phillip Bautista, elected director to the American Nurses Association California, and as a board of directors on behalf of the association we strongly support this bill."},
+
+		---------------------------------------------
+
+The 2827.0 document has relevance 5.816411852588014
+
+ {"pid":6061, "first":"Farrah", "last":"McDaid Ting", "PersonType":"Lobbyist", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"Farrah McDaid Ting representing the California State Association of Counties as well as the County Health Executives Association of California in support."},
+
+		---------------------------------------------
+
+The 2826.0 document has relevance 5.816411852588014
+
+ {"pid":6061, "first":"Farrah", "last":"McDaid Ting", "PersonType":"GeneralPublic", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"Farrah McDaid Ting representing the California State Association of Counties as well as the County Health Executives Association of California in support."},
+
+		---------------------------------------------
+
+The 456.0 document has relevance 5.81265823698872
+
+ {"pid":4960, "first":"Brian", "last":"Stenzler", "PersonType":"GeneralPublic", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"Dr. Brian Stenzler, President of the California Chiropractic Association. We oppose this bill."},
+
+		---------------------------------------------
+
+The 448.0 document has relevance 5.730562630248493
+
+ {"pid":5440, "first":"Julie", "last":"Schiffman", "PersonType":"GeneralPublic", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"Julie Schiffman, representative of the Homeschool Association of California, and we strongly oppose this bill."},
+
+		---------------------------------------------
+
+The 3349.0 document has relevance 5.690378342478529
+
+ {"pid":4960, "first":"Brian", "last":"Stenzler", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Dr. Brian Stenzler, from San Diego, president of the California Chiropractic Association, we oppose this bill."},
+
+		---------------------------------------------
+
+The 3036.0 document has relevance 5.6639572457489225
+
+ {"pid":1946, "first":"Lee Angela", "last":"Reid", "PersonType":"Lobbyist", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"Lee Angela Reid on behalf of the San Fransisco Unified School District, the Small School Districts Association and the School Employers Association of California in support."},
+
+		---------------------------------------------
+
+The 2479.0 document has relevance 5.650753696989372
+
+ {"pid":4960, "first":"Brian", "last":"Stenzler", "PersonType":"GeneralPublic", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"Dr. Brian Stenzler, president of the California Chiropractic Association, San Diego resident, and we oppose this bill."},
+
+		---------------------------------------------
+
+The 2800.0 document has relevance 5.5617964333345355
+
+ {"pid":6486, "first":"Julianna", "last":"Pierce", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"My name is Julianna Pierce. I represent the National Autism Association of California. I represent thousands of families, and we unanimously oppose this bill. I speak as the president of that organization, as a mother, I oppose this bill, and Senator Pan, if this bill is passed--"},
+
+

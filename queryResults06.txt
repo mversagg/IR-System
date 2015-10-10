@@ -1,0 +1,66 @@
+
+THE QUERY: disabled kids children exceptional needs right to education  
+
+
+10 results found:
+
+		---------------------------------------------
+
+The 435.0 document has relevance 22.990408706978116
+
+ {"pid":10764, "first":"George", "last":"Fatheree", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"In California we say, kids with exceptional needs. The kids with disabilities must be educated in the least restrictive environment and what that means is to the maximum extent possible, they have a right to receive an education with non-disabled peers and the only exception for that is if the child's disability prevents it. That's the only exception."},
+
+		---------------------------------------------
+
+The 316.0 document has relevance 13.771466983172516
+
+ {"pid":10764, "first":"George", "last":"Fatheree", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"So there's serious Constitutional problems and under the Federal law, under the Individual with Disabilities Educational Act. One of the pillars of that law, which protects the rights of students with disabilities, is that kids with disabilities have a right to learn with their non-disabled peers."},
+
+		---------------------------------------------
+
+The 1489.0 document has relevance 11.022081747823218
+
+ {"pid":9941, "first":"Mary", "last":"Holland", "PersonType":"GeneralPublic", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"I also want to touch briefly on the legal problems that would arise in taking away education from special needs children under the Individuals with Disability Education Act. Under federal law, special needs children are entitled to a free and public education that includes annual individualized educational plan reviews and a host of special services, including occupational therapy, physical therapy, and speech therapy."},
+
+		---------------------------------------------
+
+The 3010.0 document has relevance 10.401207857150848
+
+ {"pid":85, "first":"Rob", "last":"Bonta", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Thank you. The next is with respect to individualized education plans and special education. That is, jumping down now to section H. And as discussed in the analysis under Federal and state law, disabled children are guaranteed the right to a free appropriate public education, including necessary services for a child to benefit from his or her education."},
+
+		---------------------------------------------
+
+The 3009.0 document has relevance 10.401207857150848
+
+ {"pid":85, "first":"Rob", "last":"Bonta", "PersonType":"LegStaff", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Thank you. The next is with respect to individualized education plans and special education. That is, jumping down now to section H. And as discussed in the analysis under Federal and state law, disabled children are guaranteed the right to a free appropriate public education, including necessary services for a child to benefit from his or her education."},
+
+		---------------------------------------------
+
+The 2489.0 document has relevance 10.276022434741439
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Both protection of the public and children from death and disability due to preventable communicable diseases, and ensuring children with special needs their right to an education, are compelling interests to require all students be vaccinated unless granted a medical exemption."},
+
+		---------------------------------------------
+
+The 1400.0 document has relevance 9.978351436069364
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"Both protection of the public and children from death and disability due to preventable communicable diseases and assuring that children with special needs, their right to an education, are compelling interests to require all students be vaccinated unless they are granted a medical exemption. Thank you."},
+
+		---------------------------------------------
+
+The 471.0 document has relevance 9.875447129678033
+
+ {"pid":10764, "first":"George", "last":"Fatheree", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"The second part of the test is the law has to be narrowly tailored to limit rights, the right to education as little as possible, which I think this bill is the opposite. It's very broad. That's just the constitutional analysis under California's constitution. In addition, we've got the Individuals with Disabilities Educational Improvement Act, the IDEA, which is a federal law. California mirrors federal law in this respect, that requires that kids with special needs."},
+
+		---------------------------------------------
+
+The 2946.0 document has relevance 8.805995016475276
+
+ {"pid":25, "first":"Bill", "last":"Monning", "PersonType":"Legislator", "date":"22-04-15", "house":"Senate", "Committee":"Education", "text":"And because of that, I appreciate your work to try to expand options for those who chose not to vaccinate to pursue the education of their children and I see that this version that we're looking at also maintains and protects the medical exception. And we know some families whom through known choice related to vaccines or not, have children with immune compromised conditions, families dealing with a child struggling with leukemia or other immune compromising diseases."},
+
+		---------------------------------------------
+
+The 955.0 document has relevance 8.722724987287034
+
+ {"pid":98, "first":"Loni", "last":"Hancock", "PersonType":"Legislator", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"You know I'm a person who believes in vaccines. My kids are vaccinated. I think, I would hope kids would get vaccinated. I'm looking for the compelling state interest here, in doing something as draconian, as I read this bill, it says that there's nothing you can do if you choose not to vaccinate your child, except personally homeschool them with no one but other family members, in the homeschool."},
+

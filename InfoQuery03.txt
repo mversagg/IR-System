@@ -1,0 +1,7 @@
+Possible Queries:
+
+   - Medical necessity of vaccination
+   - Medical needs of children that require vaccination
+   - Why children require vaccination
+   - Children affected by vaccination or lack thereof
+   - Justification for or against vaccination

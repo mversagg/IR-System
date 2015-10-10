@@ -1,0 +1,65 @@
+
+10 results found:
+
+		---------------------------------------------
+
+The 3354.0 document has relevance 12.866686910678732
+
+ {"pid":10763, "first":"Jay", "last":"Gordon", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Mercury has been eliminated from virtually every single vaccine. However, multiple dose vials of the influenza shot given to children can still contain I believe 25 micrograms of mercury. Unusual vaccines, I believe Japanese encephalitis vaccines contain mercury. And also I believe that the tetanus shot can contain mercury."},
+
+		---------------------------------------------
+
+The 3501.0 document has relevance 10.421230330981354
+
+ {"pid":4, "first":"Tony", "last":"Thurmond", "PersonType":"LegStaff", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"One, on the issue of Thimerosal and mercury. We've been presented with all kinds of conflicting reports about mercury being in vaccinations that could cause various illness, but we've also been provided with very definitive science that says there is no mercury. I want the presenter to address it, and I want the witnesses for the opposition to address it."},
+
+		---------------------------------------------
+
+The 3500.0 document has relevance 10.421230330981354
+
+ {"pid":4, "first":"Tony", "last":"Thurmond", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"One, on the issue of Thimerosal and mercury. We've been presented with all kinds of conflicting reports about mercury being in vaccinations that could cause various illness, but we've also been provided with very definitive science that says there is no mercury. I want the presenter to address it, and I want the witnesses for the opposition to address it."},
+
+		---------------------------------------------
+
+The 2395.0 document has relevance 8.657040773325518
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"And that childhood vaccines contain mercury that causes autism. Opponents have made statements comparing vaccination to forced labor and rape. And falsely insinuated that children will be forcibly vaccinated and non-vaccinating parents would be thrown into prison."},
+
+		---------------------------------------------
+
+The 3290.0 document has relevance 8.4204811764243
+
+ {"pid":10763, "first":"Jay", "last":"Gordon", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"But the vast majority of childhood vaccines have no Thimerosal at all and trace amounts of mercury at best."},
+
+		---------------------------------------------
+
+The 3402.0 document has relevance 7.06239418348399
+
+ {"pid":10764, "first":"George", "last":"Fatheree", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Yeah, so my understanding is that there are trace amounts of not only mercury, but also other toxins and metals, I believe I have a list here, that are still permitted in vaccines that are administered within the state. Okay, so trace amounts, and then, yes sir?"},
+
+		---------------------------------------------
+
+The 2727.0 document has relevance 6.6576481620721335
+
+ {"pid":10712, "first":"Lisa", "last":"Mercury Ray", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Hi, my name's Lisa Mercury Ray. I'm from San Leandro, California. Mother of two, a chiropractor, and strongly oppose."},
+
+		---------------------------------------------
+
+The 3440.0 document has relevance 6.073669723810218
+
+ {"pid":4, "first":"Tony", "last":"Thurmond", "PersonType":"LegStaff", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"That there is no longer any mercury in the immunization is the information that we've been provided. If you believe that's different, please tell us and what science you are basing that on."},
+
+		---------------------------------------------
+
+The 3439.0 document has relevance 6.073669723810218
+
+ {"pid":4, "first":"Tony", "last":"Thurmond", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"That there is no longer any mercury in the immunization is the information that we've been provided. If you believe that's different, please tell us and what science you are basing that on."},
+
+		---------------------------------------------
+
+The 1311.0 document has relevance 2.9455677418086617
+
+ {"pid":10763, "first":"Jay", "last":"Gordon", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"So that I could be appropriately vaccinated. I, in fact, received a hepatitis A vaccination and a typhoid vaccine. SB 277 is not about whether vaccines are right or wrong, I wanna make that very clear. As a pediatrician, I give vaccines in my office every day. I receive vaccines."},
+
+
+

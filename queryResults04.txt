@@ -1,0 +1,67 @@
+
+THE QUERY: nearly everyone from my fathers generation and generations older than him when id go and speak to groups talk about the stories that they have both from their own childhood from friends personal stories of near-death experiences friends they had who were maimed by communicable diseases 
+
+
+10 results found:
+
+		---------------------------------------------
+
+The 1901.0 document has relevance 103.53486687709808
+
+ {"pid":70, "first":"Benjamin", "last":"Allen", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"Nearly everyone, from my father's generation and generations older than him, when I'd go and speak to groups, talk about the stories that they have both from their own childhood, from friends, personal stories of near-death experiences, friends they had who were maimed by communicable diseases."},
+
+		---------------------------------------------
+
+The 3569.0 document has relevance 31.245641028084258
+
+ {"pid":70, "first":"Benjamin", "last":"Allen", "PersonType":"Legislator", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"He got polio when he was a little kid. He got it right before the vaccine became widely available. He doesn't even have the arm strength in his arms to be able to break his fall. When I go down to my district, and I talk to folks from his generation and older, I hear a story every single time about the horror stories of communicable diseases from measles to polio,"},
+
+		---------------------------------------------
+
+The 1841.0 document has relevance 30.356406525403358
+
+ {"pid":70, "first":"Benjamin", "last":"Allen", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"If you did, you know that what brought me to this story was the fact that my father had polio as a kid, and got it before the vaccine became widely available. Folks from his generation can't believe that we've allowed these communicable diseases back into American society."},
+
+		---------------------------------------------
+
+The 1237.0 document has relevance 23.56771362504326
+
+ {"pid":70, "first":"Benjamin", "last":"Allen", "PersonType":"Legislator", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"I also come to this story as the son of a Polio survivor who got Polio as a child and was nursed to health by his very determined mother but who is from a generation that I think is amazed that we have allowed these communicable diseases back into American society when we have the tools to prevent that sort of human suffering and that sort of, of human suffering I suppose."},
+
+		---------------------------------------------
+
+The 3632.0 document has relevance 23.002025056020422
+
+ {"pid":70, "first":"Benjamin", "last":"Allen", "PersonType":"Legislator", "date":"22-04-15", "house":"Senate", "Committee":"Education", "text":"Some of you heard yesterday from a mother, Nina, whose friend can not be vaccinated. She's returned to my district but her story was for her search for a public school with a high immunization rate that her son could attend. Her story is not hers alone, nor are the stories that many of you have told in this room. All these stories and these lives along with the ones that we don't hear are the reason why we're all here today."},
+
+		---------------------------------------------
+
+The 1989.0 document has relevance 19.980792955251665
+
+ {"pid":70, "first":"Benjamin", "last":"Allen", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"So, I, it is a good one, it is a good one.  So, today I also stand here before you to ask for you to vote SB 277, and part of my personal story for being here is the story of my father, who contracted Polio, as a little boy, before the vaccine became widely available."},
+
+		---------------------------------------------
+
+The 1931.0 document has relevance 19.049040951335716
+
+ {"pid":10641, "first":"Michelle", "last":"Parsons", "PersonType":"GeneralPublic", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"I'm Michelle Parsons, we are three generations of unvaccinated family members, extremely healthy, I'm the first, my daughter is second generation, two children besides her at home, third generation."},
+
+		---------------------------------------------
+
+The 3507.0 document has relevance 17.658145692300284
+
+ {"pid":70, "first":"Benjamin", "last":"Allen", "PersonType":"Legislator", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"to other diseases that left people dead, left people maimed, left people permanently harmed, and it's what brings me to this experience today. I think that many people have forgotten the extent to which we have become a victim of our own success, given the fact that we have such high immunization rates that's protected us."},
+
+		---------------------------------------------
+
+The 1856.0 document has relevance 16.792195371279245
+
+ {"pid":70, "first":"Benjamin", "last":"Allen", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"And, I think that a whole generation of Americans have grown up without seeing the effects of those diseases because we had such high immunization rates. But, in some ways we became the victim of our own success. We eradicated Measles in 2000, by modern standards."},
+
+		---------------------------------------------
+
+The 1638.0 document has relevance 15.615928512932175
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"I think that your question strikes to the heart of the issue. In fact, I have right next to me, expert infectious disease as well as pediatric infectious disease, as well as my own expertise as a pediatrician with a background in public health diseases like chicken pox. And I relayed the story of the child who had the heart transplant. They are deadly to children who are immunosuppressed. They are not worried about catching the cold, right?"},
+
+

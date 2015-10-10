@@ -1,0 +1,68 @@
+
+THE QUERY: centers for disease control chance of a serious allergic reaction  
+
+
+
+10 results found:
+
+		---------------------------------------------
+
+The 1857.0 document has relevance 34.79845908493475
+
+ {"pid":25, "first":"Bill", "last":"Monning", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"According to the CDC, the Centers for Disease Control, the chance of a serious allergic reaction due to DTap, MMR or varicella vaccines is less than four in one million doses."},
+
+		---------------------------------------------
+
+The 3819.0 document has relevance 18.733423286836512
+
+ {"pid":25, "first":"Bill", "last":"Monning", "PersonType":"Legislator", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"Thank you. Well, these are helpful insights. I would ask, you referenced the CDC, Centers for Disease Control. Do you question their data as to the difference between adverse reactions versus fatalities for nonvaccinated who contract certain diseases?"},
+
+		---------------------------------------------
+
+The 2224.0 document has relevance 15.201138014931475
+
+ {"pid":9623, "first":"Randy", "last":"Bergen", "PersonType":"GeneralPublic", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"Thank you, Senator. I would just like to respond by quoting the Centers for Disease Control website, and their question that is posed about unvaccinated children spreading the disease."},
+
+		---------------------------------------------
+
+The 442.0 document has relevance 14.241750854636116
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"You would have conditions where, if there was uncertainty about so the child who may be perhaps allergic to something that may be a component of vaccine or they've developed allergic reaction"},
+
+		---------------------------------------------
+
+The 3360.0 document has relevance 13.547014503853774
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"The Centers for Disease Control list immunizations as one of the ten great public health achievements, that resulted in adding 25 years, 25 years of life expectancy for Americans. The World Health Organization describes vaccination as second only to clean water in reducing the burden of infectious disease."},
+
+		---------------------------------------------
+
+The 3067.0 document has relevance 12.811569799795418
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"These findings are also supported by the World Health Organization, the European Union, the Centers for Disease Control, the American Medical Association and other leading medical scientific and public health organizations in the United States and across the world."},
+
+		---------------------------------------------
+
+The 2653.0 document has relevance 12.811569799795418
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"And, these findings, they're also supported by the World Health Organization, the European Union, Centers for Disease Control, the American Medical Association, and other leading medical, scientific, and public health organizations in the Unites States and across the world."},
+
+		---------------------------------------------
+
+The 1787.0 document has relevance 12.734672873760895
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"The findings are also supported by the World Health Organization, the European Union, the Centers for Disease Control, the American Medical Association, and many other leading medical scientific and public health organizations in the United States and across the world."},
+
+		---------------------------------------------
+
+The 564.0 document has relevance 12.489450819584018
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"So if you want to talk about measles, they have...if they're exposed, they have a 90% chance of catching the disease. If they are vaccinated, they have about 1% chance of catching the disease."},
+
+		---------------------------------------------
+
+The 2603.0 document has relevance 12.221198844579924
+
+ {"pid":9623, "first":"Randy", "last":"Bergen", "PersonType":"GeneralPublic", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"So again, we can never be completely assured that we are providing no risk, but if you look at the AAP guidelines and the guidelines for the Centers for Disease Control and the Committee on Immunization Practices, it is recommended that it be given to those children."},
+
+
