@@ -31,7 +31,7 @@ public class Lab2Driver
         ArrayList<String> rawQuery;
         parse = new Parser(new File("Data.json"));
         Query query;
-        int alg = 1;
+        int alg = 3;
         
         prepDocs();
         System.err.println("\nDocuments prepared");
