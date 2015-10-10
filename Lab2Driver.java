@@ -67,7 +67,6 @@ public class Lab2Driver
                 {
                     rawQuery = parse.nextQuery(readFrom);
                     
-                    System.out.println("Got Out Bitch!");
                     query = new Query(rawQuery, data, alg);
                     results = query.getResults();
                     
