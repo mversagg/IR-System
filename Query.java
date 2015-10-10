@@ -163,8 +163,6 @@ public class Query
             wDoc = pnw(docs.get(docIndex));
             
             relavDocCorr.add(new Point2D.Double((double) docIndex, wDoc));
-            if (wDoc != 0.0)
-                System.out.println("Relavence of Doc " + docIndex + " is: " + wDoc);
         }
         
         if(algChoice == 1)
