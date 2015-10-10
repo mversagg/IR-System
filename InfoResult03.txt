@@ -1,0 +1,66 @@
+
+THE QUERY: disneyland measles vaccination 
+
+
+10 results found:
+
+		---------------------------------------------
+
+The 335.0 document has relevance 11.417267377805462
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"And I would also point out that this is not the first time measles have shown up in Disneyland. Disneyland is an international destination. People come from all over the world. There is still measles out in the world."},
+
+		---------------------------------------------
+
+The 782.0 document has relevance 11.057833044094874
+
+ {"pid":4992, "first":"Dean", "last":"Blumberg", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"The recent measles outbreak illustrates this point. The measles vaccine works great. One dose results in about 93 or 95% effectiveness. Two doses gets that up to about 97%. But that's not 100%. When measles was introduced in Disneyland in December, it spread."},
+
+		---------------------------------------------
+
+The 3947.0 document has relevance 10.828772194262587
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"And you had hundreds of hospitalizations from that pertussis outbreak. So, pertussis clearly triggered legislative action. Measles, of course we had the Disneyland outbreak. But don't forget that the year before, in 2013, before the Disneyland outbreak, we had a record 644 cases of measles in the country."},
+
+		---------------------------------------------
+
+The 3388.0 document has relevance 10.51432065291268
+
+ {"pid":4992, "first":"Dean", "last":"Blumberg", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"And as Dr. Pan mentioned, take a look at the recent Measles outbreak. The Measles vaccine works great. One dose results in about 93 to 95% protection. Two doses gets that up to 97%. But when Measles was introduced in California at Disneyland in December, it spread. The outbreak was amplified, fueled by those not vaccinated, resulting in their infection and also infecting those vaccinated, the 3% that the vaccine did not work."},
+
+		---------------------------------------------
+
+The 372.0 document has relevance 10.415107856138642
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"That's what we saw with the Disneyland outbreak, the measles outbreak that started in Disneyland, that's what we saw with the pertussis outbreak, that's why we're doing this bill."},
+
+		---------------------------------------------
+
+The 1184.0 document has relevance 9.4689605872271
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"So when you have a high enough immunization rate, basically, when an exposer shows up, someone shows up with the disease, it doesn't go anywhere. In fact, let's just take Disneyland, for example. This is clearly not the first time someone has shown up to Disneyland with measles. Disneyland is an internationally renowned park. People come from all over the world."},
+
+		---------------------------------------------
+
+The 1568.0 document has relevance 9.083730375790353
+
+ {"pid":25, "first":"Bill", "last":"Monning", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"A decision that potentially can set in motion the child, the mother who we heard from today whose child contracted measles on a trip to Disneyland. And so when our vaccination rates go down, we create greater susceptibility."},
+
+		---------------------------------------------
+
+The 2687.0 document has relevance 8.97468660461473
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"And the Disneyland measles outbreak infected 134 Californians, including 15 infants too young to be immunized, hospitalized at least 20 people, and both have been linked to communities with low vaccination rates, and high use of the personal belief exemptions."},
+
+		---------------------------------------------
+
+The 1754.0 document has relevance 8.791485589255077
+
+ {"pid":10765, "first":"Barbara", "last":"Loe Fisher", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"The Disneyland measles outbreak in which over half the cases were adults and only 18% were school children, ended quickly this year using successful disease control measures. This bill is not about measles or pertussis, it is about taking power away from mothers and fathers."},
+
+		---------------------------------------------
+
+The 3087.0 document has relevance 8.51472682143331
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"That is why every state in the United States including California, has passed laws requiring vaccination for school entry to protect children and the community. However, recent events such as the measles outbreak that began in Disneyland last December has proved that our community immunity is waning to dangerously"},
+

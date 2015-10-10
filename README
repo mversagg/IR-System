@@ -1,0 +1,16 @@
+Ryan Zink
+Matt Versaggi
+CPE 466
+Lab 2
+
+To run:
+
+   java Lab2Driver
+
+
+The prompts describe how to query from both user input (System.in) and from a .txt file containing the query.
+   - It should be noted that, when entering input manually through the keyboard, CTRL-d must be used to indicate 
+      EOF and thus continue the program. Simply hitting enter will not indicate EOF to the program.
+
+The IRS initially begins using the pnw schema for calculating relevance, however this can be changed using option 3
+   on the main menu if either the cosSim or okapi schemas are desired instead. 
