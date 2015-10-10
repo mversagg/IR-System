@@ -1,0 +1,67 @@
+
+THE QUERY: why support this bill sb 277 
+
+
+10 results found:
+
+		---------------------------------------------
+
+The 3650.0 document has relevance 12.805652712039564
+
+ {"pid":5439, "first":"Lisa", "last":"Bakshi", "PersonType":"GeneralPublic", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"There are 11 counties in California with zero students using a medical exemption. Supporters of this bill claim that is intended to protect those who cannot be vaccinated. The reality is that SB 277 is forcing vaccines on those it claims to want to protect. My son and daughter are two of those children. Furthermore, supporters of SB 277 claim"},
+
+		---------------------------------------------
+
+The 3638.0 document has relevance 11.27025108110633
+
+ {"pid":5891, "first":"Hannah", "last":"Henry", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"I'm Hannah Henry, mother of four children, myself and 22,000 Californians who signed a petition in support of increased immunizations strongly support SB 277."},
+
+		---------------------------------------------
+
+The 3086.0 document has relevance 10.945731329196647
+
+ {"pid":5003, "first":"Tetyana", "last":"Obukhanych", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"First, assuming that the Disneyland Measles outbreak provoked the introduction of SB 277, the question is, would it have been prevented with SB 277 in place?"},
+
+		---------------------------------------------
+
+The 3437.0 document has relevance 10.908112885236804
+
+ {"pid":9286, "first":"Jay", "last":"Hansen", "PersonType":"GeneralPublic", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"They will be here to state their support later today. The school community clearly recognizes what is in the best interest of our public schoolchildren. Please support SB 277."},
+
+		---------------------------------------------
+
+The 3166.0 document has relevance 10.29017630866839
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"Good afternoon, welcome. Okay, well, good afternoon Senator Chair, Senators. Senator Allen and I are pleased to present SB 277. SB 277 is a bill that protects children and the public from preventable contagions by abolishing the personal belief exemption to legally-required vaccinations for enrollment in school."},
+
+		---------------------------------------------
+
+The 2440.0 document has relevance 10.021840454171874
+
+ {"pid":4966, "first":"Erika", "last":"Rohr Luke", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"My name is Erika Rohr Luke, and I'm a voter, scientist, PTA board member from Woodland, California, and I support SB 277."},
+
+		---------------------------------------------
+
+The 2705.0 document has relevance 9.83377715065578
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"and school districts and the legislature often adopt requirements on students to assure that safety. And that is why, in addition to the support of many health organizations, SB 277 is supported by school boards, school employees, school nurses, and parents, and school districts ranging from"},
+
+		---------------------------------------------
+
+The 2639.0 document has relevance 9.790895307224368
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"This is the proof of why SB 277 is needed to protect the public from vaccine preventable contagions. SB 277 is also needed to protect our most vulnerable citizens. Vaccine preventable infections are particularly dangerous to people with cancer, transplants, and other immune disorders."},
+
+		---------------------------------------------
+
+The 3600.0 document has relevance 9.47179413913675
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"Thank you, thank you Chairman Bonta and members, it's a pleasure to be back here in this room again and to see you again. Senator Allen and I are please to present SB 277. SB 277 is a bill that protects children and the public from preventable contagions, By abolishing the personal belief exemption to legally require vaccinations for enrollment in school."},
+
+		---------------------------------------------
+
+The 3251.0 document has relevance 9.352350671928917
+
+ {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"Thank you Chair Liu and Senators. I'm pleased to joint author SB 277 with Senator Allen. SB 277 was heard in Health Committee where it was established that vaccines are safe and efficacious. Vaccinations have prevented more than 21 million hospitalizations and 732,000 deaths among children born in the last 20 years."},
+
+
