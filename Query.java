@@ -251,7 +251,10 @@ public class Query
         for(int index = 0; index < vocab.size(); index++)
         {
             qf = termFreq.get(vocab.get(index));
+            if(bigData.getVocab().containsKey(vocab.get(index)))
             dfi = bigData.getVocab().get(vocab.get(index)).getDF();
+            else
+            dfi = 100000000;
             //first check if the query word is in the doc list of words
             if(termsForDoc.containsKey(vocab.get(index)))
             {
