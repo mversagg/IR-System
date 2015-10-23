@@ -6,61 +6,61 @@ THE QUERY: current proposed committee amendments
 
 		---------------------------------------------
 
-The 3528.0 document has relevance 14.678892942741134
+The 3528.0 document has relevance 14.678892942741134 NOTRELAVANT
 
  {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"I wanna thank the chair and committee staff for your hard work on the bill and we are accepting the proposed committee amendments as described in the analysis. Thank you. SB 277 is about freedom, freedom from deadly crippling contagions."},
 
 		---------------------------------------------
 
-The 2163.0 document has relevance 12.846158565242156
+The 2163.0 document has relevance 12.846158565242156 RELAVANT
 
  {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"So current, in the current proposal, basically if you don't have a medical exemption then you would have to, you would have to homeschool your child. There's no other exemption. We've eliminated the personal belief exemption. There's not, there's no religious exemption currently in the state statute."},
 
 		---------------------------------------------
 
-The 2188.0 document has relevance 11.993720054103566
+The 2188.0 document has relevance 11.993720054103566 NOTRELAVANT
 
  {"pid":65, "first":"Janet", "last":"Nguyen", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"And my next question is, In the current proposal, is there any protection for religious reasons?"},
 
 		---------------------------------------------
 
-The 3943.0 document has relevance 11.072293485029968
+The 3943.0 document has relevance 11.072293485029968 RELAVANT
 
  {"pid":63, "first":"Carol", "last":"Liu", "PersonType":"Legislator", "date":"22-04-15", "house":"Senate", "Committee":"Education", "text":"So the first item on the agenda, we have 17 items today. One item is for vote only. We have five bills on consent and the rest are going to be heard in sign in order. So, with consistent, the first order of business is item one, SB 277 for vote only. And consistent with my announcement during the hearing last week, SB 277 will be vote only. There will be no public testimony. And the authors will present the proposed amendments today. Members have been reminded with an RN and a markup. Members may post questions as specific to their proposed amendments to the authors. If members have questions that require clarification from anyone other than the authors, members may request through the chair that individuals other than the authors respond to that specific question. And this committee may agree upon the amendments and condition their votes upon the amendments. But due to timing issues, the amendments will be formally adopted in the next committee by the senate judiciary committee, OK? So there's no more adoption today. So we'll just see if there is a consistent vote to get the bill out. So with that, Senator Pan and Senator Allen, SB 277 please."},
 
 		---------------------------------------------
 
-The 2840.0 document has relevance 10.104197917726532
+The 2840.0 document has relevance 10.104197917726532 RELAVANT
 
  {"pid":85, "first":"Rob", "last":"Bonta", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"As was discussed in the Senate Judiciary Committee, clarification is needed to address the status of students currently enrolled with an existing PBE. Amendment language clarifies that a student who had a PBE filed anywhere in California before January 1, 2016, will have their PBE stay in effect until they enroll into the next grade span."},
 
 		---------------------------------------------
 
-The 2839.0 document has relevance 10.104197917726532
+The 2839.0 document has relevance 10.104197917726532 RELAVANT
 
  {"pid":85, "first":"Rob", "last":"Bonta", "PersonType":"LegStaff", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"As was discussed in the Senate Judiciary Committee, clarification is needed to address the status of students currently enrolled with an existing PBE. Amendment language clarifies that a student who had a PBE filed anywhere in California before January 1, 2016, will have their PBE stay in effect until they enroll into the next grade span."},
 
 		---------------------------------------------
 
-The 2775.0 document has relevance 9.72254528983794
+The 2775.0 document has relevance 9.72254528983794 RELAVANT
 
  {"pid":70, "first":"Benjamin", "last":"Allen", "PersonType":"Legislator", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"Thank you Madam Chair. Let me just start by mentioning the fact that we have both agreed to amendments that were suggested by the committee staff. There are three. First we agree to adopt the committee's suggested amendment to provide that any new immunization requirements will be subject to a personal beliefs exemption."},
 
 		---------------------------------------------
 
-The 2635.0 document has relevance 8.954526457333674
+The 2635.0 document has relevance 8.954526457333674 RELAVANT
 
  {"pid":85, "first":"Rob", "last":"Bonta", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"I believe that current law states that a physician has complete, professional discretion over the writing of a medical exemption. However, I have asked the author to take an amendment to clarify that a medical exemption is entirely within the professional judgement of a physician and we have agreement on that amendment."},
 
 		---------------------------------------------
 
-The 2634.0 document has relevance 8.954526457333674
+The 2634.0 document has relevance 8.954526457333674 RELAVANT
 
  {"pid":85, "first":"Rob", "last":"Bonta", "PersonType":"LegStaff", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"I believe that current law states that a physician has complete, professional discretion over the writing of a medical exemption. However, I have asked the author to take an amendment to clarify that a medical exemption is entirely within the professional judgement of a physician and we have agreement on that amendment."},
 
 		---------------------------------------------
 
-The 2602.0 document has relevance 8.566327682935428
+The 2602.0 document has relevance 8.566327682935428 NOTRELAVANT
 
  {"pid":103, "first":"Ed", "last":"Hernandez", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"Thank you, we have both authors have closed. This is item number 1SB277 Pan. This is due passed to education amendments on page eight, item number 16 will be taken in the education committee. They will not be taken in this committee as well, as this committee, so call the members, call the roll please."},
 
