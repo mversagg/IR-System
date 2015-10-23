@@ -6,61 +6,61 @@ THE QUERY: vaccination doubt oppose measles
 
 		---------------------------------------------
 
-The 1870.0 document has relevance 7.972040388601599
+The 1870.0 document has relevance 7.972040388601599 NOTRELAVANT
 
  {"pid":9941, "first":"Mary", "last":"Holland", "PersonType":"GeneralPublic", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"They attend school like any other healthy child, and in the event of vaccine targeted illnesses, they must self-quarantine, or they will be restricted from attending school. There can be little doubt that if SB277 goes forward and becomes law, it will be challenged in state and federal courts."},
 
 		---------------------------------------------
 
-The 3908.0 document has relevance 7.614375820702184
+The 3908.0 document has relevance 7.614375820702184 NOTRELAVANT
 
  {"pid":6440, "first":"Unidentified", "last":"Speaker", "PersonType":"GeneralPublic", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"I don't think that's necessarily fair but that is our system as it exists. When in doubt, the MD, the doctor will fall back on the CDC vaccination contraindication list so that nobody can call them out. In addition, like I said before, in West Virginia, they did have a doctor give their opinion written against, you know, vaccinating a child and it went to court and public health, Department of Public Health overruled them."},
 
 		---------------------------------------------
 
-The 3907.0 document has relevance 7.614375820702184
+The 3907.0 document has relevance 7.614375820702184 NOTRELAVANT
 
  {"pid":6440, "first":"Unidentified", "last":"Speaker", "PersonType":"Lobbyist", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"I don't think that's necessarily fair but that is our system as it exists. When in doubt, the MD, the doctor will fall back on the CDC vaccination contraindication list so that nobody can call them out. In addition, like I said before, in West Virginia, they did have a doctor give their opinion written against, you know, vaccinating a child and it went to court and public health, Department of Public Health overruled them."},
 
 		---------------------------------------------
 
-The 3388.0 document has relevance 6.879120878907095
+The 3388.0 document has relevance 6.879120878907095 RELAVANT
 
  {"pid":4992, "first":"Dean", "last":"Blumberg", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"And as Dr. Pan mentioned, take a look at the recent Measles outbreak. The Measles vaccine works great. One dose results in about 93 to 95% protection. Two doses gets that up to 97%. But when Measles was introduced in California at Disneyland in December, it spread. The outbreak was amplified, fueled by those not vaccinated, resulting in their infection and also infecting those vaccinated, the 3% that the vaccine did not work."},
 
 		---------------------------------------------
 
-The 782.0 document has relevance 6.779641160386795
+The 782.0 document has relevance 6.779641160386795 RELAVANT
 
  {"pid":4992, "first":"Dean", "last":"Blumberg", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"The recent measles outbreak illustrates this point. The measles vaccine works great. One dose results in about 93 or 95% effectiveness. Two doses gets that up to about 97%. But that's not 100%. When measles was introduced in Disneyland in December, it spread."},
 
 		---------------------------------------------
 
-The 2902.0 document has relevance 6.662918867879818
+The 2902.0 document has relevance 6.662918867879818 RELAVANT
 
  {"pid":5003, "first":"Tetyana", "last":"Obukhanych", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"Further research determined that behind the Measles paradox is a fraction of population called 'low vaccine responders.' Low responders are those who respond poorly to the first dose of the Measles vaccine. These individuals then mount a weak immune response to subsequent re-vaccination and quickly return to the pool of Susceptibles within 2-5 years, despite being fully vaccinated."},
 
 		---------------------------------------------
 
-The 1797.0 document has relevance 5.995400837303434
+The 1797.0 document has relevance 5.995400837303434 NOTRELAVANT
 
  {"pid":10765, "first":"Barbara", "last":"Loe Fisher", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"California came face to face with this inconvenient truth last year when it became clear that 90% of child pertussis cases with vaccine records had been vaccinated. This year, 30% of measles cases with vaccine records had been vaccinated."},
 
 		---------------------------------------------
 
-The 2326.0 document has relevance 5.954801460667845
+The 2326.0 document has relevance 5.954801460667845 NOTRELAVANT
 
  {"pid":9623, "first":"Randy", "last":"Bergen", "PersonType":"GeneralPublic", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"Now measles is a completely different situation. Measles is a situation that after two doses of the vaccine, you have 99% protection and this is a virus that's so highly contagious, that if you are unprotected and you're exposed, you have a 90% chance of getting the disease."},
 
 		---------------------------------------------
 
-The 2802.0 document has relevance 5.9208916515271905
+The 2802.0 document has relevance 5.9208916515271905 NOTRELAVANT
 
  {"pid":96, "first":"Richard", "last":"Pan", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"For example, in 2008 an unvaccinated child was infected with measles in Switzerland and brought it back to San Diego where measles spread to 11 other unvaccinated children. However this disease did not spread further because there were sufficient vaccinated people in the immediate community to prevent further spread."},
 
 		---------------------------------------------
 
-The 1887.0 document has relevance 5.9208916515271905
+The 1887.0 document has relevance 5.9208916515271905 NOTRELAVANT
 
  {"pid":4995, "first":"Leah", "last":"Russin", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"A friend in San Diego told me of Measles exposure everywhere, notices at Trader Joe's and Whole Foods. A mother of eight-month-old twins told me she is keeping her children home now, until they're old enough for their Measles vaccines. And she's angry that she has to do that."},
 
