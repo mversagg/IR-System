@@ -6,61 +6,61 @@ THE QUERY: oppose vaccination too far government parents diminished
 
 		---------------------------------------------
 
-The 2247.0 document has relevance 15.84453630242377
+The 2247.0 document has relevance 15.84453630242377 RELAVANT
 
  {"pid":68, "first":"Jim", "last":"Nielsen", "PersonType":"Legislator", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"And great dismay in the American society over the decades how much that parental right, that parental responsibility has diminished. In no small measure by parents themselves. But also enhanced by actions of our government. And that's where I come down on this one."},
 
 		---------------------------------------------
 
-The 2967.0 document has relevance 9.629900349379724
+The 2967.0 document has relevance 9.629900349379724 NOTRELAVANT
 
  {"pid":4960, "first":"Brian", "last":"Stenzler", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"This takes choice away from our parents, and it puts it in a government and in a pharmaceutical company that we don't have any control over. The non-vax rate of 2.5% is not even an accurate number, because there are parents in there who selectively vaccinate."},
 
 		---------------------------------------------
 
-The 3846.0 document has relevance 8.783395199428124
+The 3846.0 document has relevance 8.783395199428124 RELAVANT
 
  {"pid":105, "first":"Bob", "last":"Huff", "PersonType":"Legislator", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"Because that's what it seems right now, unless I'm missing something. If they do not inoculate their child because they believe the government is overreached, because they believe the government has taken their personal choice on something and decided in its best interest that they should get inoculated, the parents don't want to inoculate."},
 
 		---------------------------------------------
 
-The 1322.0 document has relevance 8.726085141996148
+The 1322.0 document has relevance 8.726085141996148 NOTRELAVANT
 
  {"pid":5011, "first":"Steven", "last":"Rubin", "PersonType":"GeneralPublic", "date":"08-04-15", "house":"Senate", "Committee":"Health", "text":"Senators, vaccines are pharmaceutical products that injure and kill children every year. This is not an opinion, this is a fact, as evidenced by the government's own reporting system. I urge you to vote no on SB 277. Maintain the personal belief exemption in California. Parents deserve informed choice in their children's vaccine schedules."},
 
 		---------------------------------------------
 
-The 2995.0 document has relevance 7.976732075755081
+The 2995.0 document has relevance 7.976732075755081 RELAVANT
 
  {"pid":119, "first":"Jim", "last":"Patterson", "PersonType":"Legislator", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"I'm not personally or religiously opposed to vaccinations. All my children, grandchildren, they've all been vaccinated. But I am opposed to the unnecessary and punitive dictates of government. And I think this bill goes too far, and I will have to vote no."},
 
 		---------------------------------------------
 
-The 1365.0 document has relevance 7.965280808866665
+The 1365.0 document has relevance 7.965280808866665 NOTRELAVANT
 
  {"pid":9624, "first":"Robert", "last":"Moxley", "PersonType":"GeneralPublic", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"the relationship between government and citizens, and I submit that it is a fundamental alteration in the relationship between government and citizens that would not withstand judicial scrutiny. Now the committee won't know my decades of experience in the representation of vaccine injured children, and I don't want to beat on this"},
 
 		---------------------------------------------
 
-The 75.0 document has relevance 7.5990167031559865
+The 75.0 document has relevance 7.5990167031559865 NOTRELAVANT
 
  {"pid":43, "first":"Travis", "last":"Allen", "PersonType":"Legislator", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"Ultimately, our goal is trying to protect public health, increase vaccination rates, prevent the likelihood of an outbreak, protect kids, make sure the parents know that the government is taking reasonable steps to ensure that when they send their kids to school, they will not be exposed to dangerous communicable diseases that we have the tools to stop. That's what this is about."},
 
 		---------------------------------------------
 
-The 4047.0 document has relevance 7.040608446442755
+The 4047.0 document has relevance 7.040608446442755 NOTRELAVANT
 
  {"pid":105, "first":"Bob", "last":"Huff", "PersonType":"Legislator", "date":"15-04-15", "house":"Senate", "Committee":"Education", "text":"Having said that, public safety is probably the highest responsibility of government, and so we find ourselves wrestling with an issue that's complicated; particularly when it comes, when do you take personal freedoms and subject them to government mandates?"},
 
 		---------------------------------------------
 
-The 2105.0 document has relevance 6.973967476145374
+The 2105.0 document has relevance 6.973967476145374 NOTRELAVANT
 
  {"pid":10765, "first":"Barbara", "last":"Loe Fisher", "PersonType":"GeneralPublic", "date":"09-06-15", "house":"Assembly", "Committee":"Health", "text":"The federal government shields the drug industry and doctors from vaccinatory lawsuits and ask doctors to give children triple the numbers of vaccinations they got 30 years ago. Several hundred new vaccines are being created and this bill facilitates the mandating of new vaccines without your vote."},
 
 		---------------------------------------------
 
-The 577.0 document has relevance 6.815719879593491
+The 577.0 document has relevance 6.815719879593491 NOTRELAVANT
 
  {"pid":9613, "first":"Dorit", "last":"Reiss", "PersonType":"GeneralPublic", "date":"28-04-15", "house":"Senate", "Committee":"Judiciary", "text":"I want to highlight that most religions don't actually oppose vaccines. There are certainly parents who have sincere religious opposition to vaccines, but the way our jurisprudence works, it's very hard to limit a religious exemption if we offer one just to those parents."},
 
